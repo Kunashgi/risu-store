@@ -1,0 +1,119 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.backButton:hover {
+  color: #007bff;
+}
+
+.productHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.productTitle {
+  font-size: 28px;
+  color: #333;
+}
+
+.productContent {
+  display: flex;
+  gap: 40px;
+}
+
+.imageGallery {
+  width: 60%;
+}
+
+.productInfo {
+  width: 40%;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 20px 0;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Estilos para el carrusel */
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Estilos para los puntos del carrusel */
+.slick-dots li button:before {
+  color: #007bff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .productContent {
+    flex-direction: column;
+  }
+  
+  .imageGallery, .productInfo {
+    width: 100%;
+  }
+  
+  .slide img {
+    height: 300px;
+  }
+}
+
+.addToCartButton {
+  background-color: #3483fa; /* Azul MercadoLibre */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.addToCartButton:hover {
+  background-color: #2968c8; /* Azul más oscuro al pasar el mouse */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.addToCartButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
