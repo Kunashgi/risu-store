@@ -74,7 +74,7 @@
   color: #007bff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .productContent {
     flex-direction: column;
   }
