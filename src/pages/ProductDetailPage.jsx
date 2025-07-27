@@ -67,7 +67,7 @@ const ProductDetailPage = () => {
           
           <button className={styles.addToCartButton}
           onClick={() => navigate('/agendar-compra')}>
-            Añadir al carrito
+            Realizar Pedido
           </button>
         </div>
       </div>
