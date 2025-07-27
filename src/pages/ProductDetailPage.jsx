@@ -76,10 +76,6 @@ const ProductDetailPage = () => {
           <p className={styles.description}>{product.description}</p>
           
           {/* Puedes agregar más información aquí */}
-          <div className={styles.additionalInfo}>
-            <p><strong>Categoría:</strong> {getCategoryName(product.categoryId)}</p>
-            {/* <p><strong>Subcategoría:</strong> {product.subcategoryId}</p> */}
-          </div>
           
           <button className={styles.addToCartButton}
           onClick={() => navigate('/agendar-compra')}>

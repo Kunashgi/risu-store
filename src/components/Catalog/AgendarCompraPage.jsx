@@ -24,7 +24,7 @@ const AgendarCompra = () => {
 
           {/* Nueva sección de políticas de envío */}
           <div className="shipping-policy">
-            <h2><FaBoxes /> Políticas de envío</h2>
+            <h2><FaBoxes /> Políticas de envío (Entregas entre 1 - 2 días hábiles)</h2>
             <div className="policy-item">
               <h3>📦 Envío múltiple:</h3>
               <p>Si compras más de 1 producto, el costo de envío será único (no tiene costo adicional por productos extras).</p>

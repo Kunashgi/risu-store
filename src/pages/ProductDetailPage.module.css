@@ -4,6 +4,36 @@
   padding: 20px;
 }
 
+
+.addToCartButton {
+  background-color: #3483fa; /* Azul MercadoLibre */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.addToCartButton:hover {
+  background-color: #2968c8; /* Azul más oscuro al pasar el mouse */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.addToCartButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 .backButton {
   background: none;
   border: none;
@@ -74,46 +104,60 @@
   color: #007bff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  html {
+    font-size: 14px; /* Base para rem (opcional, ajustable) */
+  }
+
   .productContent {
     flex-direction: column;
   }
-  
+
+  .productTitle {
+    font-size: clamp(2.5rem, 6vw, 3.5rem); /* 40px-60px (fluido entre pantallas) */
+    color: #333;
+  }
+
+  .price {
+    font-size: clamp(3.5rem, 8vw, 5.5rem); /* 56px-86px */
+    font-weight: bold;
+    color: #007bff;
+    margin: clamp(1rem, 2vw, 1.5rem) 0; /* 16px-20px */
+  }
+
+  .description {
+    font-size: 36px; /* 19px-24px */
+    line-height: 1.6;
+    color: #666;
+  }
+
+  .addToCartButton {
+    background-color: #3483fa;
+    color: white;
+    border: none;
+    border-radius: 0.25rem; /* 4px equivalent */
+    padding: clamp(0.75rem, 1.5vw, 1rem) clamp(1rem, 3vw, 1.5rem); /* 12px-24px */
+    font-size: clamp(2.5rem, 5vw, 3.125rem); /* 40px-50px */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 30rem; /* 480px equivalent */
+    display: block;
+    margin: clamp(1rem, 2vw, 1.5rem) auto 0; /* 16px-20px */
+    text-transform: uppercase;
+    letter-spacing: 0.03rem; /* 0.5px equivalent */
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1); /* 2px 4px */
+  }
+
   .imageGallery, .productInfo {
     width: 100%;
   }
-  
+
   .slide img {
-    height: 300px;
+    height: auto; /* Altura flexible */
+    max-height: 43vh; /* Límite para pantallas grandes */
+    width: 100%;
+    object-fit: contain; /* Evita distorsión */
   }
-}
-
-.addToCartButton {
-  background-color: #3483fa; /* Azul MercadoLibre */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 300px;
-  display: block;
-  margin: 20px auto 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.addToCartButton:hover {
-  background-color: #2968c8; /* Azul más oscuro al pasar el mouse */
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-.addToCartButton:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }

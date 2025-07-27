@@ -123,6 +123,7 @@ li {
   font-weight: bold;
   margin-top: 30px;
   transition: background-color 0.3s;
+  font-size: 43px;
 }
 
 .whatsapp-button:hover {

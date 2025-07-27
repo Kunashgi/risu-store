@@ -57,7 +57,7 @@
 
 .product-title {
   margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: 15px;
   color: #2c3e50;
 }
 
@@ -277,6 +277,11 @@
     display: none;
   }
   
+  .product-title {
+  font-size: 14px;
+  color: #2c3e50;
+}
+
   .mobile-panel {
     display: flex;
   }
