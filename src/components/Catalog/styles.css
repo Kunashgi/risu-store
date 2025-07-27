@@ -289,6 +289,13 @@
   .catalog-page {
     padding-bottom: 120px; /* Espacio para el panel móvil */
   }
+
+  .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  zoom: 120%;
+}
 }
 
 /* Efectos hover */
