@@ -11,18 +11,6 @@ const ProductDetailPage = () => {
   const navigate = useNavigate();
   const productId = Number(id);
   const product = products.find(p => p.id === productId);
-
-    const getCategoryName = (categoryId) => {
-    const categories = {
-      1: 'Tecnología',
-      2: 'Deportes',
-      3: 'Otros',
-      4: 'Moda',
-      5: 'Juguetes',
-      // Puedes agregar más categorías según necesites
-    };
-    return categories[categoryId] || `Categoría ${categoryId}`;
-  };
   // Configuración del carrusel
   const sliderSettings = {
     dots: true,           // sin puntitos abajo
