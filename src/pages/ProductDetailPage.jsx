@@ -10,15 +10,26 @@ const ProductDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const productId = Number(id);
-  const product = products.find(p => p.id === productId);
-
-  // Redirigir al home si no hay producto
+  
+  // Verificación más robusta del ID
+  const isValidId = !isNaN(productId) && productId > 0;
+  
+  // Redirección inmediata si el ID no es válido
   useEffect(() => {
-    if (!product) {
+    if (!isValidId) {
+      navigate('/', { replace: true });
+      return;
+    }
+    
+    const productExists = products.some(p => p.id === productId);
+    if (!productExists) {
       navigate('/', { replace: true });
     }
-  }, [product, navigate]);
+  }, [isValidId, productId, navigate]);
 
+  const product = products.find(p => p.id === productId);
+  
+  // Configuración del carrusel
   const sliderSettings = {
     dots: true,
     arrows: true,
@@ -30,8 +41,8 @@ const ProductDetailPage = () => {
     swipe: true,
   };
 
-  if (!product) {
-    // Este return ya no es necesario porque el useEffect redirige
+  // Si no hay producto válido, no renderices nada (ya se redirigió)
+  if (!product || !isValidId) {
     return null;
   }
 
@@ -56,6 +67,10 @@ const ProductDetailPage = () => {
                 <img 
                   src={image} 
                   alt={`${product.name} - Imagen ${index + 1}`} 
+                  onError={(e) => {
+                    e.target.onerror = null; 
+                    e.target.src = 'ruta-a-imagen-por-defecto.jpg';
+                  }}
                 />
               </div>
             ))}
@@ -63,7 +78,7 @@ const ProductDetailPage = () => {
         </div>
         
         <div className={styles.productInfo}>
-          <p className={styles.price}>{product.price} CLP </p>
+          <p className={styles.price}>{product.price} CLP</p>
           <p className={styles.description}>{product.description}</p>
           
           <button 
