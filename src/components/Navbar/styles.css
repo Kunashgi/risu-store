@@ -93,12 +93,13 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navbar {
         display: flex;
         padding: 0.75rem;
         flex-direction: row;
         justify-content: space-between;
+        zoom:200%;
   }
   
   .menu-toggle {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { products } from '../data/products';
 import Slider from 'react-slick';
@@ -11,25 +11,28 @@ const ProductDetailPage = () => {
   const navigate = useNavigate();
   const productId = Number(id);
   const product = products.find(p => p.id === productId);
-  // Configuración del carrusel
+
+  // Redirigir al home si no hay producto
+  useEffect(() => {
+    if (!product) {
+      navigate('/', { replace: true });
+    }
+  }, [product, navigate]);
+
   const sliderSettings = {
-    dots: true,           // sin puntitos abajo
-    arrows: true,          // mostrar flechas
+    dots: true,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    draggable: true,      // desactiva arrastre con el mouse
-    swipe: true,          // desactiva swipe en touch
+    draggable: true,
+    swipe: true,
   };
 
   if (!product) {
-    return (
-      <div className={styles.container}>
-        <h2>Producto no encontrado</h2>
-        <button onClick={() => navigate('/')}>Volver al catálogo</button>
-      </div>
-    );
+    // Este return ya no es necesario porque el useEffect redirige
+    return null;
   }
 
   return (
@@ -63,10 +66,10 @@ const ProductDetailPage = () => {
           <p className={styles.price}>{product.price} CLP </p>
           <p className={styles.description}>{product.description}</p>
           
-          {/* Puedes agregar más información aquí */}
-          
-          <button className={styles.addToCartButton}
-          onClick={() => navigate('/agendar-compra')}>
+          <button 
+            className={styles.addToCartButton}
+            onClick={() => navigate('/agendar-compra')}
+          >
             Realizar Pedido
           </button>
         </div>
