@@ -39,15 +39,15 @@ import respirador2 from '../assets/images/products/respirador2.jpg';
 export const products = [
   // Tecnología - Computadoras
 
-  {
-    id: 3,
-    name: "Cargador Rápido tipo C Turbo Xiaomi",
-    price: "$9.000",
-    description: "Cargador carga rápida turbo power Xiaomi 67W, Todos los productos son nuevos Xiaomi 14, 13, 12, 11, 10, 9, Ultra Redmi Note pro",
-    categoryId: 1,
-    subcategoryId: 102,
-    images: [cargadorportada, cargador1, cargador2, cargador3],
-  },
+  // {
+  //   id: 3,
+  //   name: "Cargador Rápido tipo C Turbo Xiaomi",
+  //   price: "$9.000",
+  //   description: "Cargador carga rápida turbo power Xiaomi 67W, Todos los productos son nuevos Xiaomi 14, 13, 12, 11, 10, 9, Ultra Redmi Note pro",
+  //   categoryId: 1,
+  //   subcategoryId: 102,
+  //   images: [cargadorportada, cargador1, cargador2, cargador3],
+  // },
 
   {
     id: 12,
