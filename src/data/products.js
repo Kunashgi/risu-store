@@ -35,6 +35,14 @@ import teclado2 from '../assets/images/products/teclado2.jpg';
 import respiradorportada from '../assets/images/products/respirador-portada.jpg';
 import respirador1 from '../assets/images/products/respirador1.jpg';
 import respirador2 from '../assets/images/products/respirador2.jpg';
+import cargadorsamportada from '../assets/images/products/cargadorsam-portada.jpg';
+import cargadorsam1 from '../assets/images/products/cargadorsam1.jpg';
+import cargadorsam2 from '../assets/images/products/cargadorsam2.jpg';
+import cargadorsam3 from '../assets/images/products/cargadorsam3.jpg';
+import mouseinportada from '../assets/images/products/mousein-portada.jpg';
+import mousein1 from '../assets/images/products/mousein1.jpg';
+import mousein2 from '../assets/images/products/mousein2.jpg';
+import mousein3 from '../assets/images/products/mousein3.jpg';
 
 export const products = [
   // Tecnología - Computadoras
@@ -80,7 +88,7 @@ export const products = [
   {
     id: 4,
     name: "Mouse Gamer 800/1200/ 1600 Dpi",
-    price: "$6.000",
+    price: "$5.000",
     description: "Mouse Gamer, cuenta con control de DPI 800/1200/1600",
     categoryId: 1,
     subcategoryId: 102,
@@ -162,6 +170,26 @@ export const products = [
     categoryId: 2,
     subcategoryId: 202,
     images: [respiradorportada, respirador1, respirador2],
+  },
+
+    {
+    id: 14,
+    name: "Cargador carga rápida Samsung 45W",
+    price: "$8.000",
+    description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
+    categoryId: 1,
+    subcategoryId: 102,
+    images: [cargadorsamportada, cargadorsam1, cargadorsam2, cargadorsam3],
+  },
+
+      {
+    id: 15,
+    name: "Mouse inalámbrico gamer, ergonómico",
+    price: "$7.000",
+    description: "Mouse inalámbrico funciona por usb, tiene control dpi 1600, 6 botones y es silencioso ",
+    categoryId: 1,
+    subcategoryId: 102,
+    images: [mouseinportada, mousein1, mousein2, mousein3],
   },
 
 ];
