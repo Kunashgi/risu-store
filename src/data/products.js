@@ -57,6 +57,16 @@ export const products = [
   //   images: [cargadorportada, cargador1, cargador2, cargador3],
   // },
 
+    {
+    id: 14,
+    name: "Cargador carga rápida Samsung 45W",
+    price: "$9.000",
+    description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
+    categoryId: 1,
+    subcategoryId: 102,
+    images: [cargadorsamportada, cargadorsam1, cargadorsam2, cargadorsam3],
+  },
+
   {
     id: 12,
     name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
@@ -172,15 +182,7 @@ export const products = [
     images: [respiradorportada, respirador1, respirador2],
   },
 
-    {
-    id: 14,
-    name: "Cargador carga rápida Samsung 45W",
-    price: "$8.000",
-    description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
-    categoryId: 1,
-    subcategoryId: 102,
-    images: [cargadorsamportada, cargadorsam1, cargadorsam2, cargadorsam3],
-  },
+
 
       {
     id: 15,
