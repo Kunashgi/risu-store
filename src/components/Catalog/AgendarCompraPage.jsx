@@ -45,14 +45,14 @@ const AgendarCompra = () => {
             </div>
 
             <div className="delivery-option paid">
-              <h3>🛵 Envío a domicilio (cargo adicional):</h3>
-              <p>Costos estimados referenciales:</p>
+              <h3>🛵 Envío a domicilio (cargo adicional): $1.500 </h3>
+              {/* <p>Costos estimados referenciales:</p>
               <ul>
                 <li className="green">🟢 $1.000 – $2.000: San Bernardo, El Bosque, La Cisterna, Lo Espejo, La Pintana</li>
                 <li className="yellow">🟡 $2.000 – $3.000: Maipú, Cerrillos, San Miguel, La Florida, Estación Central, PAC</li>
                 <li className="orange">🟠 $3.000 – $4.000: Santiago Centro, Providencia, Ñuñoa, Macul, Peñalolén</li>
                 <li className="red">🔴 $4.000 – $5.000: Las Condes, Vitacura, Quilicura, Lo Barnechea, Pudahuel, etc.</li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>
