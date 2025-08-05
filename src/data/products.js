@@ -60,7 +60,7 @@ export const products = [
     {
     id: 14,
     name: "Cargador carga rápida Samsung 45W",
-    price: "$9.000",
+    price: "$8.500",
     description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
     categoryId: 1,
     subcategoryId: 102,
@@ -70,7 +70,7 @@ export const products = [
   {
     id: 12,
     name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
-    price: "$15.000",
+    price: "$15.500",
     description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
     categoryId: 1,
     subcategoryId: 202,
@@ -79,7 +79,7 @@ export const products = [
   {
     id: 1,
     name: "Audífonos gomitas 3.5mm, micrófono y control de volumen",
-    price: "$4.500",
+    price: "$4.000",
     description: "Tienen control de volumen y micrófono incluído Colores blanco y negro",
     categoryId: 1,
     subcategoryId: 101,
@@ -89,7 +89,7 @@ export const products = [
   {
     id: 2,
     name: "Audífonos in-ear, 3.5mm, micrófono y control de volumen",
-    price: "$5.000",
+    price: "$4.500",
     description: "Audífonos con control de volumen + micrófono y diseño ergonómico con cable 3.5mm, color blanco y negro",
     categoryId: 1,
     subcategoryId: 102,
@@ -98,7 +98,7 @@ export const products = [
   {
     id: 4,
     name: "Mouse Gamer 800/1200/ 1600 Dpi",
-    price: "$5.000",
+    price: "$4.500",
     description: "Mouse Gamer, cuenta con control de DPI 800/1200/1600",
     categoryId: 1,
     subcategoryId: 102,
@@ -107,7 +107,7 @@ export const products = [
   {
     id: 5,
     name: "Mousepad ergonómico",
-    price: "$3.500",
+    price: "$3.000",
     description: "Mousepad con diseño ergonómico, color celeste y negro ",
     categoryId: 1,
     subcategoryId: 103,
@@ -116,7 +116,7 @@ export const products = [
   {
     id: 6,
     name: "Pendrive 64/128/256 GB",
-    price: "$7.000",
+    price: "$6.500",
     description: "Diseño compacto y elegante capacidad a elegir 64/128/265 GB",
     categoryId: 1,
     subcategoryId: 102,
@@ -187,7 +187,7 @@ export const products = [
       {
     id: 15,
     name: "Mouse inalámbrico gamer, ergonómico",
-    price: "$7.000",
+    price: "$6.500",
     description: "Mouse inalámbrico funciona por usb, tiene control dpi 1600, 6 botones y es silencioso ",
     categoryId: 1,
     subcategoryId: 102,
