@@ -19,13 +19,13 @@ export const categories = [
       { id: 204, name: "Natación" }
     ]
   },
-  // {
-  //   id: 3,
-  //   name: "Otros",
-  //   subcategories: [
-  //     { id: 301, name: "Electrodomésticos" },
-  //     { id: 302, name: "Muebles" },
-  //     { id: 303, name: "Decoración" }
-  //   ]
-  // }
+  {
+    id: 3,
+    name: "Otros",
+    subcategories: [
+      { id: 301, name: "Electrodomésticos" },
+      { id: 302, name: "Muebles" },
+      { id: 303, name: "Decoración" }
+    ]
+  }
 ];
