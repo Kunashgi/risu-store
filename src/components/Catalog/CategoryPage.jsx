@@ -4,8 +4,8 @@ import { products } from '../../data/products';
 import { categories } from '../../data/categories';
 import CategorySection from './CategorySection';
 import { useNavigate } from 'react-router-dom';
-import envio from '../../assets/images/page/envio-gratis.png';
-import envioMobile from '../../assets/images/page/mobile.png';
+import envio from '../../assets/images/page/envio-gratis2.png';
+import envioMobile from '../../assets/images/page/mobile2.png';
 import { FaWhatsapp } from 'react-icons/fa';
 import './styles.css';
 

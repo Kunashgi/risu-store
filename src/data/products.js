@@ -22,6 +22,12 @@ import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
 import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
 import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
 import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
+import parlanteportada from '../assets/images/products/parlante-portada.jpeg';
+import parlante1 from '../assets/images/products/parlante1.jpeg';
+import parlante2 from '../assets/images/products/parlante2.jpeg';
+import parlante3 from '../assets/images/products/parlante3.jpeg';
+import parlante4 from '../assets/images/products/parlante4.jpeg';
+import packmouseportada from '../assets/images/products/pack-mouse.jpeg'
 import afeitadoraportada from '../assets/images/products/afeitadora-portada.jpeg';
 import afeitadora1 from '../assets/images/products/afeitadora1.jpeg';
 import afeitadora2 from '../assets/images/products/afeitadora2.jpeg';
@@ -47,20 +53,21 @@ import tabla1 from '../assets/images/products/tabla1.jpg';
 import tabla2 from '../assets/images/products/tabla2.jpg';
 import trucksportada from '../assets/images/products/trucks-portada.jpg';
 import trucks1 from '../assets/images/products/truck1.jpg';
-import tecladoportada from '../assets/images/products/teclado-portada.jpg';
-import teclado1 from '../assets/images/products/teclado1.jpg';
-import teclado2 from '../assets/images/products/teclado2.jpg';
-import respiradorportada from '../assets/images/products/respirador-portada.jpg';
-import respirador1 from '../assets/images/products/respirador1.jpg';
-import respirador2 from '../assets/images/products/respirador2.jpg';
+// import tecladoportada from '../assets/images/products/teclado-portada.jpg';
+// import teclado1 from '../assets/images/products/teclado1.jpg';
+// import teclado2 from '../assets/images/products/teclado2.jpg';
+// import respiradorportada from '../assets/images/products/respirador-portada.jpg';
+// import respirador1 from '../assets/images/products/respirador1.jpg';
+// import respirador2 from '../assets/images/products/respirador2.jpg';
 import cargadorsamportada from '../assets/images/products/cargadorsam-portada.jpg';
 import cargadorsam1 from '../assets/images/products/cargadorsam1.jpg';
 import cargadorsam2 from '../assets/images/products/cargadorsam2.jpg';
 import cargadorsam3 from '../assets/images/products/cargadorsam3.jpg';
-import mouseinportada from '../assets/images/products/mousein-portada.jpg';
-import mousein1 from '../assets/images/products/mousein1.jpg';
-import mousein2 from '../assets/images/products/mousein2.jpg';
-import mousein3 from '../assets/images/products/mousein3.jpg';
+// import mouseinportada from '../assets/images/products/mousein-portada.jpg';
+// import mousein1 from '../assets/images/products/mousein1.jpg';
+// import mousein2 from '../assets/images/products/mousein2.jpg';
+// import mousein3 from '../assets/images/products/mousein3.jpg';
+
 
 export const products = [
   // Tecnología - Computadoras
@@ -73,7 +80,6 @@ export const products = [
     subcategoryId: 102,
     images: [cargador120wportada, cargador120w1, cargador120w2, cargador120w3, cargador120w4, cargador120w5, cargador120w6],
   },
-
       {
     id: 17,
     name: "Cargador ORIGINAL Xiaomi 67W Carga rápida /Hyper Charge",
@@ -84,6 +90,15 @@ export const products = [
     images: [cargador67wportada, cargador67w1, cargador67w2, cargador67w3, cargador67w4, cargador67w5, cargador67w6],
   },
 
+    {
+    id: 19,
+    name: "Parlante Bluetooth inalámbrico Lenovo",
+    price: "$15.000",
+    description: "Batería de 1200mah es pequeño, facil de transportar a todos lados",
+    categoryId: 1,
+    subcategoryId: 102,
+    images: [parlanteportada, parlante1, parlante2, parlante3, parlante4],
+  },
     {
     id: 14,
     name: "Cargador carga rápida Samsung 45W",
@@ -96,35 +111,35 @@ export const products = [
 
   {
     id: 3,
-    name: "Cargador Rápido tipo C Turbo Xiaomi",
+    name: "Cargador Rápido tipo C Turbo Xiaomi 67W",
     price: "$9.500",
     description: "Cargador carga rápida turbo power Xiaomi 67W, Todos los productos son nuevos Xiaomi 14, 13, 12, 11, 10, 9, Ultra Redmi Note pro",
     categoryId: 1,
     subcategoryId: 102,
     images: [cargadorportada, cargador1, cargador2, cargador3],
   },
-        {
-    id: 15,
-    name: "Mouse inalámbrico gamer, ergonómico",
-    price: "$6.500",
-    description: "Mouse inalámbrico funciona por usb, tiene control dpi 1600, 6 botones y es silencioso ",
-    categoryId: 1,
-    subcategoryId: 102,
-    images: [mouseinportada, mousein1, mousein2, mousein3],
-  },
-  {
-    id: 12,
-    name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
-    price: "$15.500",
-    description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
-    categoryId: 1,
-    subcategoryId: 202,
-    images: [tecladoportada, teclado1, teclado2],
-  },
+  //       {
+  //   id: 15,
+  //   name: "Mouse inalámbrico gamer, ergonómico",
+  //   price: "$6.500",
+  //   description: "Mouse inalámbrico funciona por usb, tiene control dpi 1600, 6 botones y es silencioso ",
+  //   categoryId: 1,
+  //   subcategoryId: 102,
+  //   images: [mouseinportada, mousein1, mousein2, mousein3],
+  // },
+  // {
+  //   id: 12,
+  //   name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
+  //   price: "$15.500",
+  //   description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
+  //   categoryId: 1,
+  //   subcategoryId: 202,
+  //   images: [tecladoportada, teclado1, teclado2],
+  // },
   {
     id: 1,
     name: "Audífonos gomitas 3.5mm, micrófono y control de volumen",
-    price: "$4.000",
+    price: "$3.500",
     description: "Tienen control de volumen y micrófono incluído Colores blanco y negro",
     categoryId: 1,
     subcategoryId: 101,
@@ -134,7 +149,7 @@ export const products = [
   {
     id: 2,
     name: "Audífonos in-ear, 3.5mm, micrófono y control de volumen",
-    price: "$4.500",
+    price: "$4.000",
     description: "Audífonos con control de volumen + micrófono y diseño ergonómico con cable 3.5mm, color blanco y negro",
     categoryId: 1,
     subcategoryId: 102,
@@ -143,7 +158,7 @@ export const products = [
   {
     id: 4,
     name: "Mouse Gamer 800/1200/ 1600 Dpi",
-    price: "$4.500",
+    price: "$4.000",
     description: "Mouse Gamer, cuenta con control de DPI 800/1200/1600",
     categoryId: 1,
     subcategoryId: 102,
@@ -208,26 +223,34 @@ export const products = [
 
  //OTROS 
 
-  {
-    id: 13,
-    name: "Dilatador Nasal Anti Ronquido Magnetico Tiras Nariz",
-    price: "$8.500",
-    description: "Tiras nasales magnéticas  anti ronquidos y dilatador nasal que ayuda a aumentar el oxigeno y disminuir resequedad, contiene 15 parches magnéticos",
-    categoryId: 3,
-    subcategoryId: 202,
-    images: [respiradorportada, respirador1, respirador2],
-  },
+  // {
+  //   id: 13,
+  //   name: "Dilatador Nasal Anti Ronquido Magnetico Tiras Nariz",
+  //   price: "$8.500",
+  //   description: "Tiras nasales magnéticas  anti ronquidos y dilatador nasal que ayuda a aumentar el oxigeno y disminuir resequedad, contiene 15 parches magnéticos",
+  //   categoryId: 3,
+  //   subcategoryId: 202,
+  //   images: [respiradorportada, respirador1, respirador2],
+  // },
 
           {
     id: 18,
     name: "Afeitadora / Recortadora de pelo electrica recargable",
-    price: "$8.500",
+    price: "$8.000",
     description: "Máquina para cortar el pelo, incluye 4 peines 3mm, 1.5mm, 4mm y 2mm, y cable para cargar USB",
     categoryId: 3,
     subcategoryId: 102,
     images: [afeitadoraportada, afeitadora1, afeitadora2, afeitadora3],
   },
-
+        {
+    id: 20,
+    name: "Pack Mouse + Mousepad ergonómico",
+    price: "$6.000",
+    description: "Se vende kit / pack de mouse con control de DPI y mousepad ergonómico  ",
+    categoryId: 3,
+    subcategoryId: 102,
+    images: [packmouseportada, mousepadportada, mouseportada, mouse1],
+  },
     {
     id: 5,
     name: "Mousepad ergonómico",
