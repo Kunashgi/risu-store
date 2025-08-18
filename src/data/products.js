@@ -254,7 +254,7 @@ export const products = [
     {
     id: 5,
     name: "Mousepad ergonómico",
-    price: "$3.000",
+    price: "$2.500",
     description: "Mousepad con diseño ergonómico, color celeste y negro ",
     categoryId: 3,
     subcategoryId: 103,

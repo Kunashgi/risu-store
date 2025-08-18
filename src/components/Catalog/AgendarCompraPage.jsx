@@ -29,10 +29,10 @@ const AgendarCompra = () => {
               <h3>📦 Envío múltiple:</h3>
               <p>Si compras más de 1 producto, el costo de envío será único (no tiene costo adicional por productos extras).</p>
             </div>
-            <div className="policy-item free-shipping">
+            {/* <div className="policy-item free-shipping">
               <h3>🚚 Envío gratis:</h3>
               <p>¡Por compras sobre $21.000 CLP el envío a domicilio es totalmente gratis! (Válido para todas las comunas, Región Metropolitana)</p>
-            </div>
+            </div> */}
           </div>
 
           <div className="delivery-section">
@@ -40,19 +40,19 @@ const AgendarCompra = () => {
             <div className="delivery-option free">
               <h3><FaMapMarkerAlt /> Entregas GRATUITAS en:</h3>
               <ul>
-                <li>Estación Metrotren Lo Blanco (San Bernardo)</li>
+                <li>Estación Metrotren Lo Blanco o mi Domicilio  (San Bernardo) </li>
               </ul>
             </div>
 
             <div className="delivery-option paid">
-              <h3>🛵 Envío a domicilio (cargo adicional): $1.500 </h3>
-              {/* <p>Costos estimados referenciales:</p>
+              <h3>🛵 Envío a domicilio (cargo adicional):</h3>
+              <p>Costos ESTIMADOS referenciales:</p>
               <ul>
                 <li className="green">🟢 $1.000 – $2.000: San Bernardo, El Bosque, La Cisterna, Lo Espejo, La Pintana</li>
                 <li className="yellow">🟡 $2.000 – $3.000: Maipú, Cerrillos, San Miguel, La Florida, Estación Central, PAC</li>
                 <li className="orange">🟠 $3.000 – $4.000: Santiago Centro, Providencia, Ñuñoa, Macul, Peñalolén</li>
                 <li className="red">🔴 $4.000 – $5.000: Las Condes, Vitacura, Quilicura, Lo Barnechea, Pudahuel, etc.</li>
-              </ul> */}
+              </ul>
             </div>
           </div>
         </div>
