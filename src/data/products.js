@@ -22,6 +22,21 @@ import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
 import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
 import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
 import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
+import botellaportada from '../assets/images/products/botella-portada.jpeg';
+import botella1 from '../assets/images/products/botella1.jpeg';
+import botella2 from '../assets/images/products/botella2.jpeg';
+import botella3 from '../assets/images/products/botella3.jpeg';
+import botella4 from '../assets/images/products/botella4.jpeg';
+import irrigadorportada from '../assets/images/products/irrigador-portada.jpeg';
+import irrigador1 from '../assets/images/products/irrigador1.jpeg';
+import irrigador2 from '../assets/images/products/irrigador2.jpeg';
+import irrigador3 from '../assets/images/products/irrigador3.jpeg';
+import irrigador4 from '../assets/images/products/irrigador4.jpeg';
+import mecanicoportada from '../assets/images/products/mecanico-portada.jpeg';
+import mecanico1 from '../assets/images/products/mecanico1.jpeg';
+import mecanico2 from '../assets/images/products/mecanico2.jpeg';
+import mecanico3 from '../assets/images/products/mecanico3.jpeg';
+import mecanico4 from '../assets/images/products/mecanico4.jpeg';
 import parlanteportada from '../assets/images/products/parlante-portada.jpeg';
 import parlante1 from '../assets/images/products/parlante1.jpeg';
 import parlante2 from '../assets/images/products/parlante2.jpeg';
@@ -53,20 +68,20 @@ import tabla1 from '../assets/images/products/tabla1.jpg';
 import tabla2 from '../assets/images/products/tabla2.jpg';
 import trucksportada from '../assets/images/products/trucks-portada.jpg';
 import trucks1 from '../assets/images/products/truck1.jpg';
-// import tecladoportada from '../assets/images/products/teclado-portada.jpg';
-// import teclado1 from '../assets/images/products/teclado1.jpg';
-// import teclado2 from '../assets/images/products/teclado2.jpg';
-// import respiradorportada from '../assets/images/products/respirador-portada.jpg';
-// import respirador1 from '../assets/images/products/respirador1.jpg';
-// import respirador2 from '../assets/images/products/respirador2.jpg';
+import tecladoportada from '../assets/images/products/teclado-portada.jpg';
+import teclado1 from '../assets/images/products/teclado1.jpg';
+import teclado2 from '../assets/images/products/teclado2.jpg';
+import respiradorportada from '../assets/images/products/respirador-portada.jpg';
+import respirador1 from '../assets/images/products/respirador1.jpg';
+import respirador2 from '../assets/images/products/respirador2.jpg';
 import cargadorsamportada from '../assets/images/products/cargadorsam-portada.jpg';
 import cargadorsam1 from '../assets/images/products/cargadorsam1.jpg';
 import cargadorsam2 from '../assets/images/products/cargadorsam2.jpg';
 import cargadorsam3 from '../assets/images/products/cargadorsam3.jpg';
-// import mouseinportada from '../assets/images/products/mousein-portada.jpg';
-// import mousein1 from '../assets/images/products/mousein1.jpg';
-// import mousein2 from '../assets/images/products/mousein2.jpg';
-// import mousein3 from '../assets/images/products/mousein3.jpg';
+import mouseinportada from '../assets/images/products/mousein-portada.jpg';
+import mousein1 from '../assets/images/products/mousein1.jpg';
+import mousein2 from '../assets/images/products/mousein2.jpg';
+import mousein3 from '../assets/images/products/mousein3.jpg';
 
 
 export const products = [
@@ -118,24 +133,34 @@ export const products = [
     subcategoryId: 102,
     images: [cargadorportada, cargador1, cargador2, cargador3],
   },
-  //       {
-  //   id: 15,
-  //   name: "Mouse inalámbrico gamer, ergonómico",
-  //   price: "$6.500",
-  //   description: "Mouse inalámbrico funciona por usb, tiene control dpi 1600, 6 botones y es silencioso ",
-  //   categoryId: 1,
-  //   subcategoryId: 102,
-  //   images: [mouseinportada, mousein1, mousein2, mousein3],
-  // },
-  // {
-  //   id: 12,
-  //   name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
-  //   price: "$15.500",
-  //   description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
-  //   categoryId: 1,
-  //   subcategoryId: 202,
-  //   images: [tecladoportada, teclado1, teclado2],
-  // },
+        {
+    id: 15,
+    name: "Mouse inalámbrico gamer, ergonómico",
+    price: "$6.500",
+    description: "Mouse inalámbrico funciona por usb, tiene control dpi 1600, 6 botones y es silencioso ",
+    categoryId: 1,
+    subcategoryId: 102,
+    images: [mouseinportada, mousein1, mousein2, mousein3],
+  },
+
+            {
+    id: 22,
+    name: "Teclado mecánico gamer retro iluminado RGB Ergonómico",
+    price: "$20.000",
+    description: "Teclado mecánico, gamer retro iluminado ergonómico, sin teclado numérico, tamaño pequeño",
+    categoryId: 1,
+    subcategoryId: 103,
+    images: [mecanicoportada, mecanico1, mecanico2, mecanico3, mecanico4],
+  },
+    {
+    id: 12,
+    name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
+    price: "$15.500",
+    description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
+    categoryId: 1,
+    subcategoryId: 202,
+    images: [tecladoportada, teclado1, teclado2],
+  },
   {
     id: 1,
     name: "Audífonos gomitas 3.5mm, micrófono y control de volumen",
@@ -155,6 +180,7 @@ export const products = [
     subcategoryId: 102,
     images: [audifonosinearportada, audifonosinear1, audifonosinear2],
   },
+
   {
     id: 4,
     name: "Mouse Gamer 800/1200/ 1600 Dpi",
@@ -223,15 +249,15 @@ export const products = [
 
  //OTROS 
 
-  // {
-  //   id: 13,
-  //   name: "Dilatador Nasal Anti Ronquido Magnetico Tiras Nariz",
-  //   price: "$8.500",
-  //   description: "Tiras nasales magnéticas  anti ronquidos y dilatador nasal que ayuda a aumentar el oxigeno y disminuir resequedad, contiene 15 parches magnéticos",
-  //   categoryId: 3,
-  //   subcategoryId: 202,
-  //   images: [respiradorportada, respirador1, respirador2],
-  // },
+  {
+    id: 13,
+    name: "Dilatador Nasal Anti Ronquido Magnetico Tiras Nariz",
+    price: "$8.500",
+    description: "Tiras nasales magnéticas  anti ronquidos y dilatador nasal que ayuda a aumentar el oxigeno y disminuir resequedad, contiene 15 parches magnéticos",
+    categoryId: 3,
+    subcategoryId: 202,
+    images: [respiradorportada, respirador1, respirador2],
+  },
 
           {
     id: 18,
@@ -242,6 +268,27 @@ export const products = [
     subcategoryId: 102,
     images: [afeitadoraportada, afeitadora1, afeitadora2, afeitadora3],
   },
+
+        {
+    id: 21,
+    name: "Botella de Agua con pajita 750ML, color negro mate",
+    price: "$8.500",
+    description: "Botella de agua 750ml con pajita para tomar, diseño color negro mate con dorado",
+    categoryId: 3,
+    subcategoryId: 103,
+    images: [botellaportada, botella1, botella2, botella3, botella4],
+  },
+
+            {
+    id: 23,
+    name: "Irrigador bucal / Hilo dental de agua, NO usa baterías",
+    price: "$7.500",
+    description: "Irrigador bucal de agua, funciona como hilo dental sin dañar la encía para nada, no usa baterías.",
+    categoryId: 3,
+    subcategoryId: 103,
+    images: [irrigadorportada, irrigador1, irrigador2, irrigador3, irrigador4],
+  },
+
         {
     id: 20,
     name: "Pack Mouse + Mousepad ergonómico",
@@ -260,5 +307,4 @@ export const products = [
     subcategoryId: 103,
     images: [mousepadportada, mousepad1, mousepad2, mousepad3],
   },
-
 ];
