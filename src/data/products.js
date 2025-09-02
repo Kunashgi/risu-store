@@ -15,13 +15,13 @@ import cargador67w3 from '../assets/images/products/cargador67w3.jpeg';
 import cargador67w4 from '../assets/images/products/cargador67w4.jpeg';
 import cargador67w5 from '../assets/images/products/cargador67w5.jpeg';
 import cargador67w6 from '../assets/images/products/cargador67w6.jpeg';
-import cargador120wportada from '../assets/images/products/cargador120w-portada.jpg';
-import cargador120w1 from '../assets/images/products/cargador120w1.jpeg';
-import cargador120w2 from '../assets/images/products/cargador120w2.jpeg';
-import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
-import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
-import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
-import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
+// import cargador120wportada from '../assets/images/products/cargador120w-portada.jpg';
+// import cargador120w1 from '../assets/images/products/cargador120w1.jpeg';
+// import cargador120w2 from '../assets/images/products/cargador120w2.jpeg';
+// import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
+// import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
+// import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
+// import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
 import botellaportada from '../assets/images/products/botella-portada.jpeg';
 import botella1 from '../assets/images/products/botella1.jpeg';
 import botella2 from '../assets/images/products/botella2.jpeg';
@@ -68,16 +68,16 @@ import tabla1 from '../assets/images/products/tabla1.jpg';
 import tabla2 from '../assets/images/products/tabla2.jpg';
 import trucksportada from '../assets/images/products/trucks-portada.jpg';
 import trucks1 from '../assets/images/products/truck1.jpg';
-import tecladoportada from '../assets/images/products/teclado-portada.jpg';
-import teclado1 from '../assets/images/products/teclado1.jpg';
-import teclado2 from '../assets/images/products/teclado2.jpg';
+// import tecladoportada from '../assets/images/products/teclado-portada.jpg';
+// import teclado1 from '../assets/images/products/teclado1.jpg';
+// import teclado2 from '../assets/images/products/teclado2.jpg';
 import respiradorportada from '../assets/images/products/respirador-portada.jpg';
 import respirador1 from '../assets/images/products/respirador1.jpg';
 import respirador2 from '../assets/images/products/respirador2.jpg';
-import cargadorsamportada from '../assets/images/products/cargadorsam-portada.jpg';
-import cargadorsam1 from '../assets/images/products/cargadorsam1.jpg';
-import cargadorsam2 from '../assets/images/products/cargadorsam2.jpg';
-import cargadorsam3 from '../assets/images/products/cargadorsam3.jpg';
+// import cargadorsamportada from '../assets/images/products/cargadorsam-portada.jpg';
+// import cargadorsam1 from '../assets/images/products/cargadorsam1.jpg';
+// import cargadorsam2 from '../assets/images/products/cargadorsam2.jpg';
+// import cargadorsam3 from '../assets/images/products/cargadorsam3.jpg';
 import mouseinportada from '../assets/images/products/mousein-portada.jpg';
 import mousein1 from '../assets/images/products/mousein1.jpg';
 import mousein2 from '../assets/images/products/mousein2.jpg';
@@ -86,15 +86,15 @@ import mousein3 from '../assets/images/products/mousein3.jpg';
 
 export const products = [
   // Tecnología - Computadoras
-    {
-    id: 16,
-    name: "Cargador ORIGINAL Xiaomi 120W Carga rápida / Hyper charge",
-    price: "$15.000",
-    description: "Cargador original nuevo Xiaomi , Hyper charge de 120W, Carga super rápida",
-    categoryId: 1,
-    subcategoryId: 102,
-    images: [cargador120wportada, cargador120w1, cargador120w2, cargador120w3, cargador120w4, cargador120w5, cargador120w6],
-  },
+  //   {
+  //   id: 16,
+  //   name: "Cargador ORIGINAL Xiaomi 120W Carga rápida / Hyper charge",
+  //   price: "$15.000",
+  //   description: "Cargador original nuevo Xiaomi , Hyper charge de 120W, Carga super rápida",
+  //   categoryId: 1,
+  //   subcategoryId: 102,
+  //   images: [cargador120wportada, cargador120w1, cargador120w2, cargador120w3, cargador120w4, cargador120w5, cargador120w6],
+  // },
       {
     id: 17,
     name: "Cargador ORIGINAL Xiaomi 67W Carga rápida /Hyper Charge",
@@ -114,15 +114,15 @@ export const products = [
     subcategoryId: 102,
     images: [parlanteportada, parlante1, parlante2, parlante3, parlante4],
   },
-    {
-    id: 14,
-    name: "Cargador carga rápida Samsung 45W",
-    price: "$8.500",
-    description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
-    categoryId: 1,
-    subcategoryId: 102,
-    images: [cargadorsamportada, cargadorsam1, cargadorsam2, cargadorsam3],
-  },
+  //   {
+  //   id: 14,
+  //   name: "Cargador carga rápida Samsung 45W",
+  //   price: "$8.500",
+  //   description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
+  //   categoryId: 1,
+  //   subcategoryId: 102,
+  //   images: [cargadorsamportada, cargadorsam1, cargadorsam2, cargadorsam3],
+  // },
 
   {
     id: 3,
@@ -152,15 +152,15 @@ export const products = [
     subcategoryId: 103,
     images: [mecanicoportada, mecanico1, mecanico2, mecanico3, mecanico4],
   },
-    {
-    id: 12,
-    name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
-    price: "$15.500",
-    description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
-    categoryId: 1,
-    subcategoryId: 202,
-    images: [tecladoportada, teclado1, teclado2],
-  },
+  //   {
+  //   id: 12,
+  //   name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
+  //   price: "$15.500",
+  //   description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
+  //   categoryId: 1,
+  //   subcategoryId: 202,
+  //   images: [tecladoportada, teclado1, teclado2],
+  // },
   {
     id: 1,
     name: "Audífonos gomitas 3.5mm, micrófono y control de volumen",
