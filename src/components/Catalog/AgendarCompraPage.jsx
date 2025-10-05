@@ -24,7 +24,7 @@ const AgendarCompra = () => {
 
           {/* Nueva sección de políticas de envío */}
           <div className="shipping-policy">
-            <h2><FaBoxes /> Políticas de envío (Entregas entre 1 - 2 días hábiles)</h2>
+            <h2><FaBoxes /> Políticas de envío (Coordinar por WhatsApp)</h2>
             <div className="policy-item">
               <h3>📦 Envío múltiple:</h3>
               <p>Si compras más de 1 producto, el costo de envío será único (no tiene costo adicional por productos extras).</p>
@@ -40,13 +40,22 @@ const AgendarCompra = () => {
             <div className="delivery-option free">
               <h3><FaMapMarkerAlt /> Entregas GRATUITAS en:</h3>
               <ul>
-                <li>Estación Metrotren Lo Blanco o mi Domicilio  (San Bernardo) </li>
+                <li>Estación Metrotren Lo Blanco 🚅🚅</li>
+                <li>Mi Domicilio: Nacimiento 1379 San Bernardo 🏠🏠 </li>
               </ul>
             </div>
 
+          <div className="delivery-option metro">
+    <h3>🚇 Entregas en Estación Metro, ⏰ Horario 12:00PM - 16:00PM ⏰</h3>
+    <ul>
+      <li className="metro"> Los Héroes Línea 1 y 2 🔴 🟡: $2.000 (Adicional) </li>
+      <li className="metro"> Santa Ana Línea 2 y 5 🟡 🟢: $2.000 (Adicional) </li>
+    </ul>
+  </div>
+
             <div className="delivery-option paid">
               <h3>🛵 Envío a domicilio (cargo adicional):</h3>
-              <p>Costos ESTIMADOS referenciales:</p>
+              <p>Costos ESTIMADOS referenciales: (consultar valor con direccion exacta) </p>
               <ul>
                 <li className="green">🟢 $1.000 – $2.000: San Bernardo, El Bosque, La Cisterna, Lo Espejo, La Pintana</li>
                 <li className="yellow">🟡 $2.000 – $3.000: Maipú, Cerrillos, San Miguel, La Florida, Estación Central, PAC</li>

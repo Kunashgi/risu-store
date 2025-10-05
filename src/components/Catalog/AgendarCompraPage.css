@@ -89,6 +89,10 @@ h3 {
   background-color: #fff8e1;
   border-left: 4px solid #ffc107;
 }
+.delivery-option.metro {
+  background-color: #fadbd3;
+  border-left: 4px solid #ff0707;
+}
 
 ul, ol {
   padding-left: 20px;
@@ -202,4 +206,14 @@ li {
 
 .free-shipping h3 {
   color: #2e7d32;
+}
+
+.delivery-option-metro {
+  background-color: #e8f4fd;
+  border-left: 4px solid #0078d4;
+}
+
+.metro {
+  font-weight: bold;
+  color: #0078d4;
 }

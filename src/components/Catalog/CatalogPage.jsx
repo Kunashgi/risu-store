@@ -3,7 +3,7 @@ import { categories } from '../../data/categories';
 import { products } from '../../data/products';
 import CategorySection from './CategorySection';
 import { useNavigate } from 'react-router-dom';
-import envio from '../../assets/images/page/envio-gratis2.png';
+import envio from '../../assets/images/page/envio-gratis3.png';
 import envioMobile from '../../assets/images/page/mobile2.png';
 import { FaWhatsapp } from 'react-icons/fa';
 import './styles.css';
@@ -46,7 +46,7 @@ const CatalogPage = () => {
 
           <div className="mobile-delivery-message">
             <span className="delivery-icon">🚚</span>
-            <span>Entregas 1-2 días hábiles</span>
+            <span>Entregas coordinar por WhatsApp</span>
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@ const CatalogPage = () => {
 
         <div className="delivery-message">
           <span className="delivery-icon">🚚</span>
-          <span>Entregas a domicilio en 1-2 días hábiles</span>
+          <span>Entregas coordinar por WhatsApp</span>
         </div>
 
         <button

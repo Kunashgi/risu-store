@@ -15,18 +15,38 @@ import cargador67w3 from '../assets/images/products/cargador67w3.jpeg';
 import cargador67w4 from '../assets/images/products/cargador67w4.jpeg';
 import cargador67w5 from '../assets/images/products/cargador67w5.jpeg';
 import cargador67w6 from '../assets/images/products/cargador67w6.jpeg';
-import cargador120wportada from '../assets/images/products/cargador120w-portada.jpg';
-import cargador120w1 from '../assets/images/products/cargador120w1.jpeg';
-import cargador120w2 from '../assets/images/products/cargador120w2.jpeg';
-import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
-import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
-import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
-import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
+// import cargador120wportada from '../assets/images/products/cargador120w-portada.jpg';
+// import cargador120w1 from '../assets/images/products/cargador120w1.jpeg';
+// import cargador120w2 from '../assets/images/products/cargador120w2.jpeg';
+// import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
+// import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
+// import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
+// import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
 import botellaportada from '../assets/images/products/botella-portada.jpeg';
 import botella1 from '../assets/images/products/botella1.jpeg';
 import botella2 from '../assets/images/products/botella2.jpeg';
 import botella3 from '../assets/images/products/botella3.jpeg';
 import botella4 from '../assets/images/products/botella4.jpeg';
+import mikasaportada from '../assets/images/products/mikasa-portada.jpeg';
+import mikasa1 from '../assets/images/products/mikasa1.jpeg';
+import mikasa2 from '../assets/images/products/mikasa2.jpeg';
+import mikasa3 from '../assets/images/products/mikasa3.jpeg';
+import mikasa4 from '../assets/images/products/mikasa4.jpeg';
+import paralelasportada from '../assets/images/products/paralelas-portada.jpeg';
+import paralelas1 from '../assets/images/products/paralelas1.jpeg';
+import paralelas2 from '../assets/images/products/paralelas2.jpeg';
+import paralelas3 from '../assets/images/products/paralelas3.jpeg';
+import paralelas4 from '../assets/images/products/paralelas4.jpeg';
+import magnesioportada from '../assets/images/products/magnesio-portada.jpeg';
+import magnesio1 from '../assets/images/products/magnesio1.jpeg';
+import magnesio2 from '../assets/images/products/magnesio2.jpeg';
+import magnesio3 from '../assets/images/products/magnesio3.jpeg';
+import magnesio4 from '../assets/images/products/magnesio4.jpeg';
+import audifonosbtportada from '../assets/images/products/audifonosbt-portada.jpeg';
+import audifonosbt1 from '../assets/images/products/audifonosbt1.jpeg';
+import audifonosbt2 from '../assets/images/products/audifonosbt2.jpeg';
+import audifonosbt3 from '../assets/images/products/audifonosbt3.jpeg';
+import audifonosbt4 from '../assets/images/products/audifonosbt4.jpeg';
 import irrigadorportada from '../assets/images/products/irrigador-portada.jpeg';
 import irrigador1 from '../assets/images/products/irrigador1.jpeg';
 import irrigador2 from '../assets/images/products/irrigador2.jpeg';
@@ -71,6 +91,11 @@ import teclado2 from '../assets/images/products/teclado2.jpg';
 import respiradorportada from '../assets/images/products/respirador-portada.jpg';
 import respirador1 from '../assets/images/products/respirador1.jpg';
 import respirador2 from '../assets/images/products/respirador2.jpg';
+import cargadororiginalsamsungportada from '../assets/images/products/cargadororiginalsamsung-portada.jpg';
+import cargadororiginalsamsung1 from '../assets/images/products/cargadororiginalsamsung1.jpeg';
+import cargadororiginalsamsung2 from '../assets/images/products/cargadororiginalsamsung2.jpeg';
+import cargadororiginalsamsung3 from '../assets/images/products/cargadororiginalsamsung3.jpeg';
+import cargadororiginalsamsung4 from '../assets/images/products/cargadororiginalsamsung4.jpeg';
 import cargadorsamportada from '../assets/images/products/cargadorsam-portada.jpg';
 import cargadorsam1 from '../assets/images/products/cargadorsam1.jpg';
 import cargadorsam2 from '../assets/images/products/cargadorsam2.jpg';
@@ -83,15 +108,18 @@ import mousein3 from '../assets/images/products/mousein3.jpg';
 
 export const products = [
   // Tecnología - Computadoras
-    {
-    id: 16,
-    name: "Cargador ORIGINAL Xiaomi 120W Carga rápida / Hyper charge",
-    price: "$16.000",
-    description: "Cargador original nuevo Xiaomi , Hyper charge de 120W, Carga super rápida",
-    categoryId: 1,
-    subcategoryId: 102,
-    images: [cargador120wportada, cargador120w1, cargador120w2, cargador120w3, cargador120w4, cargador120w5, cargador120w6],
-  },
+  //   {
+  //   id: 16,
+  //   name: "Cargador ORIGINAL Xiaomi 120W Carga rápida / Hyper charge",
+  //   price: "$16.000",
+  //   description: "Cargador original nuevo Xiaomi , Hyper charge de 120W, Carga super rápida",
+  //   categoryId: 1,
+  //   subcategoryId: 102,
+  //   images: [cargador120wportada, cargador120w1, cargador120w2, cargador120w3, cargador120w4, cargador120w5, cargador120w6],
+  // },
+
+
+
       {
     id: 17,
     name: "Cargador ORIGINAL Xiaomi 67W Carga rápida /Hyper Charge",
@@ -100,6 +128,26 @@ export const products = [
     categoryId: 1,
     subcategoryId: 102,
     images: [cargador67wportada, cargador67w1, cargador67w2, cargador67w3, cargador67w4, cargador67w5, cargador67w6],
+  },
+
+        {
+    id: 25,
+    name: "Cargador ORIGINAL Samsung, Carga SUPER rápida 45W",
+    price: "$18.000",
+    description: "Cargador original Samsung 45W cara super rápido, cable 1.8M ",
+    categoryId: 1,
+    subcategoryId: 102,
+    images: [cargadororiginalsamsungportada, cargadororiginalsamsung1, cargadororiginalsamsung2, cargadororiginalsamsung3, cargadororiginalsamsung4],
+  },
+
+          {
+    id: 28,
+    name: "Audífonos Bluetooth inalámbricos In-Ear LENOVO",
+    price: "$9.000",
+    description: "audífonos Bluetooth Lenovo, cómodos incluyen envase para cargar ",
+    categoryId: 1,
+    subcategoryId: 102,
+    images: [audifonosbtportada, audifonosbt1, audifonosbt2, audifonosbt3, audifonosbt4],
   },
 
     {
@@ -111,6 +159,7 @@ export const products = [
     subcategoryId: 102,
     images: [parlanteportada, parlante1, parlante2, parlante3, parlante4],
   },
+
     {
     id: 14,
     name: "Cargador carga rápida Samsung 45W",
@@ -189,6 +238,34 @@ export const products = [
   },
 
   //   // Deportes - Fútbol
+          {
+    id: 26,
+    name: "Pelota Voleibol Mikasa v200W ORIGINAL NUEVA",
+    price: "$32.000",
+    description: "Pelota nueva y original Mikasa de voleibol modelo v200W ",
+    categoryId: 2,
+    subcategoryId: 103,
+    images: [mikasaportada, mikasa1, mikasa2, mikasa3, mikasa4],
+  },
+
+            {
+    id: 27,
+    name: "Mini paralelas de madera CALISTENIA rectas",
+    price: "$17.000",
+    description: "Mini paralelas de 20cm, rectas de madera, incluyen cintas y Anti deslizante",
+    categoryId: 2,
+    subcategoryId: 103,
+    images: [paralelasportada, paralelas1, paralelas2, paralelas3, paralelas4],
+  },
+              {
+    id: 28,
+    name: "Magnesio liquido Deporte ( mejora agarre )",
+    price: "$8.000",
+    description: "Magnesio liquido de 100ml, para levantamiento de pesas gimnasio, anillas y calistenia",
+    categoryId: 2,
+    subcategoryId: 103,
+    images: [magnesioportada, magnesio1, magnesio2, magnesio3, magnesio4],
+  },
   {
     id: 9,
     name: "Skate Nuevo, armado 8 pulgadas, diseños variados",
