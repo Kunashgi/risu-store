@@ -15,13 +15,13 @@ import cargador67w3 from '../assets/images/products/cargador67w3.jpeg';
 import cargador67w4 from '../assets/images/products/cargador67w4.jpeg';
 import cargador67w5 from '../assets/images/products/cargador67w5.jpeg';
 import cargador67w6 from '../assets/images/products/cargador67w6.jpeg';
-// import cargador120wportada from '../assets/images/products/cargador120w-portada.jpg';
-// import cargador120w1 from '../assets/images/products/cargador120w1.jpeg';
-// import cargador120w2 from '../assets/images/products/cargador120w2.jpeg';
-// import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
-// import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
-// import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
-// import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
+import cargador120wportada from '../assets/images/products/cargador120w-portada.jpg';
+import cargador120w1 from '../assets/images/products/cargador120w1.jpeg';
+import cargador120w2 from '../assets/images/products/cargador120w2.jpeg';
+import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
+import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
+import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
+import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
 import botellaportada from '../assets/images/products/botella-portada.jpeg';
 import botella1 from '../assets/images/products/botella1.jpeg';
 import botella2 from '../assets/images/products/botella2.jpeg';
@@ -91,11 +91,11 @@ import teclado2 from '../assets/images/products/teclado2.jpg';
 import respiradorportada from '../assets/images/products/respirador-portada.jpg';
 import respirador1 from '../assets/images/products/respirador1.jpg';
 import respirador2 from '../assets/images/products/respirador2.jpg';
-import cargadororiginalsamsungportada from '../assets/images/products/cargadororiginalsamsung-portada.jpg';
-import cargadororiginalsamsung1 from '../assets/images/products/cargadororiginalsamsung1.jpeg';
-import cargadororiginalsamsung2 from '../assets/images/products/cargadororiginalsamsung2.jpeg';
-import cargadororiginalsamsung3 from '../assets/images/products/cargadororiginalsamsung3.jpeg';
-import cargadororiginalsamsung4 from '../assets/images/products/cargadororiginalsamsung4.jpeg';
+// import cargadororiginalsamsungportada from '../assets/images/products/cargadororiginalsamsung-portada.jpg';
+// import cargadororiginalsamsung1 from '../assets/images/products/cargadororiginalsamsung1.jpeg';
+// import cargadororiginalsamsung2 from '../assets/images/products/cargadororiginalsamsung2.jpeg';
+// import cargadororiginalsamsung3 from '../assets/images/products/cargadororiginalsamsung3.jpeg';
+// import cargadororiginalsamsung4 from '../assets/images/products/cargadororiginalsamsung4.jpeg';
 import cargadorsamportada from '../assets/images/products/cargadorsam-portada.jpg';
 import cargadorsam1 from '../assets/images/products/cargadorsam1.jpg';
 import cargadorsam2 from '../assets/images/products/cargadorsam2.jpg';
@@ -108,15 +108,15 @@ import mousein3 from '../assets/images/products/mousein3.jpg';
 
 export const products = [
   // Tecnología - Computadoras
-  //   {
-  //   id: 16,
-  //   name: "Cargador ORIGINAL Xiaomi 120W Carga rápida / Hyper charge",
-  //   price: "$16.000",
-  //   description: "Cargador original nuevo Xiaomi , Hyper charge de 120W, Carga super rápida",
-  //   categoryId: 1,
-  //   subcategoryId: 102,
-  //   images: [cargador120wportada, cargador120w1, cargador120w2, cargador120w3, cargador120w4, cargador120w5, cargador120w6],
-  // },
+    {
+    id: 16,
+    name: "Cargador ORIGINAL Xiaomi 120W Carga rápida / Hyper charge",
+    price: "$16.000",
+    description: "Cargador original nuevo Xiaomi , Hyper charge de 120W, Carga super rápida",
+    categoryId: 1,
+    subcategoryId: 102,
+    images: [cargador120wportada, cargador120w1, cargador120w2, cargador120w3, cargador120w4, cargador120w5, cargador120w6],
+  },
 
 
 
@@ -130,15 +130,15 @@ export const products = [
     images: [cargador67wportada, cargador67w1, cargador67w2, cargador67w3, cargador67w4, cargador67w5, cargador67w6],
   },
 
-        {
-    id: 25,
-    name: "Cargador ORIGINAL Samsung, Carga SUPER rápida 45W",
-    price: "$18.000",
-    description: "Cargador original Samsung 45W cara super rápido, cable 1.8M ",
-    categoryId: 1,
-    subcategoryId: 102,
-    images: [cargadororiginalsamsungportada, cargadororiginalsamsung1, cargadororiginalsamsung2, cargadororiginalsamsung3, cargadororiginalsamsung4],
-  },
+  //       {
+  //   id: 25,
+  //   name: "Cargador ORIGINAL Samsung, Carga SUPER rápida 45W",
+  //   price: "$18.000",
+  //   description: "Cargador original Samsung 45W cara super rápido, cable 1.8M ",
+  //   categoryId: 1,
+  //   subcategoryId: 102,
+  //   images: [cargadororiginalsamsungportada, cargadororiginalsamsung1, cargadororiginalsamsung2, cargadororiginalsamsung3, cargadororiginalsamsung4],
+  // },
 
           {
     id: 28,
