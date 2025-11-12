@@ -3,8 +3,8 @@ import { categories } from '../../data/categories';
 import { products } from '../../data/products';
 import CategorySection from './CategorySection';
 import { useNavigate } from 'react-router-dom';
-import envio from '../../assets/images/page/envio-gratis3.png';
-import envioMobile from '../../assets/images/page/mobile2.png';
+import envio from '../../assets/images/page/envio-gratis4.png';
+// import envioMobile from '../../assets/images/page/mobile4.png';
 import { FaWhatsapp } from 'react-icons/fa';
 import './styles.css';
 
@@ -30,23 +30,23 @@ const CatalogPage = () => {
 
       {/* Panel móvil (solo visible en mobile) */}
       <div className="mobile-panel">
-        <img
+        {/* <img
           src={envioMobile}
           alt="Envíos a domicilio"
           className="mobile-image"
-        />
+        /> */}
 
         <div className="mobile-button-container">
           <button
             className="mobile-button"
             onClick={handleButtonClick}
           >
-            Agendar Compra <FaWhatsapp style={{ marginLeft: '8px' }} />
+            <FaWhatsapp  />
           </button>
 
           <div className="mobile-delivery-message">
             <span className="delivery-icon">🚚</span>
-            <span>Entregas coordinar por WhatsApp</span>
+            <span>Entregas a Domicilio: $4.000 <br /> coordinar por WhatsApp</span>
           </div>
         </div>
       </div>

@@ -242,7 +242,12 @@
 }
 
 .mobile-delivery-message{
-  zoom:240%
+  zoom:240%;
+  font-size: 20px;
+}
+
+.delivery-icon {
+    font-size: 40px;
 }
 
 .mobile-image {
@@ -254,13 +259,13 @@
 }
 
 .mobile-button {
-  padding: 10px 15px;
-  background-color: #3498db;
+
+  background-color: #2eb835;
   color: white;
   border: none;
-  border-radius: 50px;
+  border-radius: 100px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 35px;
   transition: all 0.3s ease;
   width: 100%;
   max-width: 200px;
@@ -317,7 +322,7 @@
 /* Efectos hover */
 .panel-button:hover,
 .mobile-button:hover {
-  background-color: #2980b9;
+  background-color: #30c555;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }

@@ -22,11 +22,11 @@ import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
 import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
 import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
 import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
-import botellaportada from '../assets/images/products/botella-portada.jpeg';
-import botella1 from '../assets/images/products/botella1.jpeg';
-import botella2 from '../assets/images/products/botella2.jpeg';
-import botella3 from '../assets/images/products/botella3.jpeg';
-import botella4 from '../assets/images/products/botella4.jpeg';
+// import botellaportada from '../assets/images/products/botella-portada.jpeg';
+// import botella1 from '../assets/images/products/botella1.jpeg';
+// import botella2 from '../assets/images/products/botella2.jpeg';
+// import botella3 from '../assets/images/products/botella3.jpeg';
+// import botella4 from '../assets/images/products/botella4.jpeg';
 import mikasaportada from '../assets/images/products/mikasa-portada.jpeg';
 import mikasa1 from '../assets/images/products/mikasa1.jpeg';
 import mikasa2 from '../assets/images/products/mikasa2.jpeg';
@@ -191,9 +191,9 @@ export const products = [
 
             {
     id: 22,
-    name: "Teclado mecánico gamer retro iluminado RGB Ergonómico",
-    price: "$20.000",
-    description: "Teclado mecánico, gamer retro iluminado ergonómico, sin teclado numérico, tamaño pequeño",
+    name: "Teclado sensación mecánico gamer retro iluminado RGB Ergonómico",
+    price: "$19.000",
+    description: "Teclado sensación mecánico, gamer retro iluminado ergonómico, sin teclado numérico, tamaño pequeño",
     categoryId: 1,
     subcategoryId: 103,
     images: [mecanicoportada, mecanico1, mecanico2, mecanico3, mecanico4],
@@ -334,15 +334,15 @@ export const products = [
     images: [afeitadoraportada, afeitadora1, afeitadora2, afeitadora3],
   },
 
-        {
-    id: 21,
-    name: "Botella de Agua con pajita 750ML, color negro mate",
-    price: "$8.500",
-    description: "Botella de agua 750ml con pajita para tomar, diseño color negro mate con dorado",
-    categoryId: 3,
-    subcategoryId: 103,
-    images: [botellaportada, botella1, botella2, botella3, botella4],
-  },
+  //       {
+  //   id: 21,
+  //   name: "Botella de Agua con pajita 750ML, color negro mate",
+  //   price: "$8.500",
+  //   description: "Botella de agua 750ml con pajita para tomar, diseño color negro mate con dorado",
+  //   categoryId: 3,
+  //   subcategoryId: 103,
+  //   images: [botellaportada, botella1, botella2, botella3, botella4],
+  // },
 
             {
     id: 23,

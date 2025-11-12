@@ -4,7 +4,7 @@ import './AgendarCompraPage.css';
 
 const AgendarCompra = () => {
   const whatsappNumber = "+56966367967";
-  const whatsappMessage = encodeURIComponent(`Hola! Vengo de la pagina Web y necesito generar un pedido, me gustaria revisar el catalogo`);
+  const whatsappMessage = encodeURIComponent(`Hola! Vengo de la pagina Web y necesito generar un pedido`);
 
   return (
     <div className="agendar-compra-page">
@@ -46,21 +46,21 @@ const AgendarCompra = () => {
             </div>
 
           <div className="delivery-option metro">
-    <h3>🚇 Entregas en Estación Metro, ⏰ Horario 12:00PM - 16:00PM ⏰</h3>
+    <h3>🚇 Entregas en Estación Metro, ⏰ Horario 13:00PM (Miercoles y Sábado) ⏰</h3>
     <ul>
-      <li className="metro"> Los Héroes Línea 1 y 2 🔴 🟡: $2.000 (Adicional) </li>
-      <li className="metro"> Santa Ana Línea 2 y 5 🟡 🟢: $2.000 (Adicional) </li>
+      <li className="metro"> Los Héroes Línea 1 y 2 🔴 🟡: $1.000 (Adicional) </li>
+      <li className="metro"> Santa Ana Línea 2 y 5 🟡 🟢: $1.000 (Adicional) </li>
     </ul>
   </div>
 
             <div className="delivery-option paid">
               <h3>🛵 Envío a domicilio (cargo adicional):</h3>
-              <p>Costos ESTIMADOS referenciales: (consultar valor con direccion exacta) </p>
+              <p>Costo de envio a domicilio $4.000 ( Gestionado por Chileexpress) </p>
               <ul>
-                <li className="green">🟢 $1.000 – $2.000: San Bernardo, El Bosque, La Cisterna, Lo Espejo, La Pintana</li>
+                {/* <li className="green">🟢 $1.000 – $2.000: San Bernardo, El Bosque, La Cisterna, Lo Espejo, La Pintana</li>
                 <li className="yellow">🟡 $2.000 – $3.000: Maipú, Cerrillos, San Miguel, La Florida, Estación Central, PAC</li>
                 <li className="orange">🟠 $3.000 – $4.000: Santiago Centro, Providencia, Ñuñoa, Macul, Peñalolén</li>
-                <li className="red">🔴 $4.000 – $5.000: Las Condes, Vitacura, Quilicura, Lo Barnechea, Pudahuel, etc.</li>
+                <li className="red">🔴 $4.000 – $5.000: Las Condes, Vitacura, Quilicura, Lo Barnechea, Pudahuel, etc.</li> */}
               </ul>
             </div>
           </div>
@@ -79,7 +79,7 @@ const AgendarCompra = () => {
               <p className="security-note">🔒 Por seguridad, los datos de transferencia se comparten solo por mensaje directo.</p>
             </div>
 
-            <p>📞 Necesitaré un número de contacto (WhatsApp o para llamada) para coordinar la entrega.</p>
+            <p>📞 Necesitaré datos personales para coordinar la entrega.</p>
           </div>
         </div>
 
