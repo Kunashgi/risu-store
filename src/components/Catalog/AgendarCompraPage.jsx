@@ -49,7 +49,7 @@ const AgendarCompra = () => {
                         <div className="delivery-option paid">
               <h3>🛵 Envío a domicilio (cargo adicional):</h3>
               <div className="blue-express-container">
-                <p>Costo de envio a domicilio $3.100 ( Gestionado por Blue Express) </p>
+                <p>Costo de envio a domicilio $3.600 ( Gestionado por Blue Express) </p>
                 <div className="blue-express-logo-wrapper">
                   <img 
                     src={blueExpressLogo} 

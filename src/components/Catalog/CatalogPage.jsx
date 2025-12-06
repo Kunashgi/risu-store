@@ -28,25 +28,12 @@ const CatalogPage = () => {
       </div>
 
       {/* Panel móvil (solo visible en mobile) */}
-      <div className="mobile-panel">
-        {/* <img
-          src={envioMobile}
-          alt="Envíos a domicilio"
-          className="mobile-image"
-        /> */}
-
-        <div className="mobile-button-container">
-          <button
-            className="mobile-button"
-            onClick={handleButtonClick}
-          >
-            <FaWhatsapp  />
-          </button>
-
-          <div className="mobile-delivery-message">
-            <span className="delivery-icon">🚚</span>
-            <span>Entregas a Domicilio: $3.100 (BlueExpress) <br /> coordinar por WhatsApp</span>
-          </div>
+      <div className="mobile-panel" onClick={handleButtonClick}>
+        <span className="mobile-delivery-text-simple">
+          Envíos a domicilio disponibles a $3.600 con blue express
+        </span>
+        <div className="mobile-whatsapp-icon-simple">
+          <FaWhatsapp />
         </div>
       </div>
 
@@ -56,7 +43,7 @@ const CatalogPage = () => {
           <div className="delivery-info-content">
             <div className="delivery-info-text">
               <p className="delivery-main-text">
-                Envíos a domicilio disponibles a $3.100 con Blue Express dentro de la Región Metropolitana
+                Envíos a domicilio disponibles a $3.600 con Blue Express dentro de la Región Metropolitana
               </p>
               <p className="delivery-sub-text">
                 Coordinar por WhatsApp

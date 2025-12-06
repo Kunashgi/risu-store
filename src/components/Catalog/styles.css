@@ -549,13 +549,16 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #f8f9fa;
-  padding: 12px 15px;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  padding: 8px 12px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
   z-index: 999;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width: 1201px) {
@@ -564,71 +567,47 @@
   }
 }
 
-.mobile-button-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.mobile-delivery-message {
+.mobile-delivery-text-simple {
   font-size: 0.7rem;
-  line-height: 1.3;
+  color: #2c3e50;
+  font-weight: 500;
   text-align: center;
   flex: 1;
-  min-width: 0;
+  line-height: 1.3;
 }
 
 @media (min-width: 480px) {
-  .mobile-delivery-message {
+  .mobile-delivery-text-simple {
     font-size: 0.75rem;
   }
 }
 
-.delivery-icon {
-  font-size: 1.2rem;
-  flex-shrink: 0;
-}
-
-@media (min-width: 480px) {
-  .delivery-icon {
-    font-size: 1.4rem;
-  }
-}
-
-.mobile-image {
-  width: auto;
-  height: 160px;
-  border-radius: 0%;
-  object-fit: cover;
-  border: 0px solid white;
-}
-
-.mobile-button {
-  background-color: #25D366;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-  width: 50px;
-  height: 50px;
+.mobile-whatsapp-icon-simple {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
   flex-shrink: 0;
-  padding: 0;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(37, 211, 102, 0.3);
 }
 
 @media (min-width: 480px) {
-  .mobile-button {
-    width: 55px;
-    height: 55px;
-    font-size: 1.75rem;
+  .mobile-whatsapp-icon-simple {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
   }
+}
+
+.mobile-panel:active .mobile-whatsapp-icon-simple {
+  transform: scale(0.95);
+  background-color: #20ba5a;
 }
 
 /* Catálogo principal */
@@ -649,20 +628,19 @@
 /* Espacio para el panel móvil */
 @media (max-width: 1200px) {
   .catalog-page {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 1200px) {
   .catalog-page {
-    padding-bottom: 110px;
+    padding-bottom: 65px;
   }
 }
 
 /* Efectos hover */
-.panel-button:hover,
-.mobile-button:hover {
-  background-color: #30c555;
+.panel-button:hover {
+  background-color: #2980b9;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
