@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaWhatsapp, FaMoneyBillWave, FaTruck, FaMapMarkerAlt, FaLock, FaBoxes } from 'react-icons/fa';
+import { FaWhatsapp, FaMoneyBillWave, FaTruck, FaMapMarkerAlt, FaLock} from 'react-icons/fa';
+import blueExpressLogo from '../../assets/images/page/blue-express-logo.png';
 import './AgendarCompraPage.css';
 
 const AgendarCompra = () => {
@@ -23,17 +24,17 @@ const AgendarCompra = () => {
         </a>
 
           {/* Nueva sección de políticas de envío */}
-          <div className="shipping-policy">
+          {/* <div className="shipping-policy">
             <h2><FaBoxes /> Políticas de envío (Coordinar por WhatsApp)</h2>
             <div className="policy-item">
               <h3>📦 Envío múltiple:</h3>
               <p>Si compras más de 1 producto, el costo de envío será único (no tiene costo adicional por productos extras).</p>
             </div>
-            {/* <div className="policy-item free-shipping">
+            <div className="policy-item free-shipping">
               <h3>🚚 Envío gratis:</h3>
               <p>¡Por compras sobre $21.000 CLP el envío a domicilio es totalmente gratis! (Válido para todas las comunas, Región Metropolitana)</p>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
 
           <div className="delivery-section">
             <h2><FaTruck /> Opciones de entrega</h2>
@@ -45,17 +46,18 @@ const AgendarCompra = () => {
               </ul>
             </div>
 
-          <div className="delivery-option metro">
-    <h3>🚇 Entregas en Estación Metro, ⏰ Horario 13:00PM (Miercoles y Sábado) ⏰</h3>
-    <ul>
-      <li className="metro"> Los Héroes Línea 1 y 2 🔴 🟡: $1.000 (Adicional) </li>
-      <li className="metro"> Santa Ana Línea 2 y 5 🟡 🟢: $1.000 (Adicional) </li>
-    </ul>
-  </div>
-
-            <div className="delivery-option paid">
+                        <div className="delivery-option paid">
               <h3>🛵 Envío a domicilio (cargo adicional):</h3>
-              <p>Costo de envio a domicilio $4.000 ( Gestionado por Chileexpress) </p>
+              <div className="blue-express-container">
+                <p>Costo de envio a domicilio $3.100 ( Gestionado por Blue Express) </p>
+                <div className="blue-express-logo-wrapper">
+                  <img 
+                    src={blueExpressLogo} 
+                    alt="Logo Blue Express" 
+                    className="blue-express-logo"
+                  />
+                </div>
+              </div>
               <ul>
                 {/* <li className="green">🟢 $1.000 – $2.000: San Bernardo, El Bosque, La Cisterna, Lo Espejo, La Pintana</li>
                 <li className="yellow">🟡 $2.000 – $3.000: Maipú, Cerrillos, San Miguel, La Florida, Estación Central, PAC</li>
@@ -63,6 +65,16 @@ const AgendarCompra = () => {
                 <li className="red">🔴 $4.000 – $5.000: Las Condes, Vitacura, Quilicura, Lo Barnechea, Pudahuel, etc.</li> */}
               </ul>
             </div>
+
+          <div className="delivery-option metro">
+    <h3>🚇 Entregas en Estación Metro, ⏰ Horario 13:00PM (Domingo) ⏰</h3>
+    <ul>
+      <li className="metro"> Los Héroes Línea 1 y 2 🔴 🟡: $1.000 (Adicional) </li>
+      <li className="metro"> Santa Ana Línea 2 y 5 🟡 🟢: $1.000 (Adicional) </li>
+    </ul>
+  </div>
+
+
           </div>
         </div>
 

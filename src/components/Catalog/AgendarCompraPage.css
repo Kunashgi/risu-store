@@ -1,9 +1,22 @@
 .agendar-compra-page {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .agendar-compra-page {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .agendar-compra-page {
+    padding: 20px;
+  }
 }
 
 .back-button {
@@ -26,12 +39,36 @@
 .agendar-content {
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 1.25rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+@media (min-width: 768px) {
+  .agendar-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .agendar-content {
+    padding: 20px;
+  }
+}
+
 .info-section, .payment-section {
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .info-section, .payment-section {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-section, .payment-section {
+    margin-bottom: 30px;
+  }
 }
 
 h1, h2, h3 {
@@ -42,21 +79,65 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 
 h2 {
-  font-size: 20px;
-  margin: 25px 0 15px;
+  font-size: 1.25rem;
+  margin: 1.5rem 0 1rem;
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.4rem;
+    margin: 1.75rem 0 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 20px;
+    margin: 25px 0 15px;
+  }
 }
 
 h3 {
-  font-size: 18px;
-  margin: 15px 0 10px;
+  font-size: 1.1rem;
+  margin: 1rem 0 0.75rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.2rem;
+    margin: 1.25rem 0 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+  }
 }
 
 .message-box {
@@ -75,9 +156,23 @@ h3 {
 }
 
 .delivery-option {
-  padding: 15px;
+  padding: 1rem;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .delivery-option {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .delivery-option {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .delivery-option.free {
@@ -89,17 +184,85 @@ h3 {
   background-color: #fff8e1;
   border-left: 4px solid #ffc107;
 }
+
+.blue-express-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .blue-express-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.blue-express-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.blue-express-logo {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+@media (min-width: 480px) {
+  .blue-express-logo {
+    max-width: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .blue-express-logo {
+    max-width: 160px;
+  }
+}
 .delivery-option.metro {
   background-color: #fadbd3;
   border-left: 4px solid #ff0707;
 }
 
 ul, ol {
-  padding-left: 20px;
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  ul, ol {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  ul, ol {
+    padding-left: 20px;
+  }
 }
 
 li {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  li {
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  li {
+    margin-bottom: 8px;
+  }
 }
 
 .green { color: #2e7d32; }
@@ -109,9 +272,23 @@ li {
 
 .payment-info {
   background-color: #f5f5f5;
-  padding: 15px;
+  padding: 1rem;
   border-radius: 8px;
   border-left: 4px solid #9e9e9e;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .payment-info {
+    padding: 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .payment-info {
+    padding: 15px;
+  }
 }
 
 .whatsapp-button {
@@ -122,12 +299,39 @@ li {
   background-color: #25D366;
   color: white;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 0.875rem 1.25rem;
   border-radius: 5px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 1.5rem;
   transition: background-color 0.3s;
-  font-size: 43px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .whatsapp-button {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .whatsapp-button {
+    padding: 1.25rem 1.75rem;
+    font-size: 1.2rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .whatsapp-button {
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    margin-top: 30px;
+  }
 }
 
 .whatsapp-button:hover {

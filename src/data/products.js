@@ -62,6 +62,17 @@ import parlante1 from '../assets/images/products/parlante1.jpeg';
 import parlante2 from '../assets/images/products/parlante2.jpeg';
 import parlante3 from '../assets/images/products/parlante3.jpeg';
 import parlante4 from '../assets/images/products/parlante4.jpeg';
+import bandasportada from '../assets/images/products/bandas-portada.jpeg';
+import bandas1 from '../assets/images/products/bandas1.jpeg';
+import bandas2 from '../assets/images/products/bandas2.jpeg';
+import bandas3 from '../assets/images/products/bandas3.jpeg';
+import bandas4 from '../assets/images/products/bandas4.jpeg';
+import bandas5 from '../assets/images/products/bandas5.jpeg';
+import spitfireportada from '../assets/images/products/spitfire-portada.jpeg';
+import spitfire1 from '../assets/images/products/spitfire1.jpeg';
+import spitfire2 from '../assets/images/products/spitfire2.jpeg';
+import spitfire3 from '../assets/images/products/spitfire3.jpeg';
+import spitfire4 from '../assets/images/products/spitfire4.jpeg';
 import packmouseportada from '../assets/images/products/pack-mouse.jpeg'
 import afeitadoraportada from '../assets/images/products/afeitadora-portada.jpeg';
 import afeitadora1 from '../assets/images/products/afeitadora1.jpeg';
@@ -256,6 +267,26 @@ export const products = [
     categoryId: 2,
     subcategoryId: 103,
     images: [paralelasportada, paralelas1, paralelas2, paralelas3, paralelas4],
+  },
+
+              {
+    id: 30,
+    name: "Pack Bandas elásticas de resistencia entrenamiento calistenia / gym (También se vende por separado)",
+    price: "$25.000",
+    description: "Precios por separado: -Roja: $4.000, -Negra:$6.500, -Morada: $9.000, -Verde: $11.000",
+    categoryId: 2,
+    subcategoryId: 103,
+    images: [bandasportada, bandas1, bandas2, bandas3, bandas4, bandas5],
+  },
+
+              {
+    id: 31,
+    name: "Pack Rudas + Rodamientos Spitfire Fórmula four (Por separado tambien se vende)",
+    price: "$50.000",
+    description: "Pack Spitfire, rodamientos classic, características de las ruedas: 52mm 33mm y 99d, también se pueden comprar por separado: - Rodamientos: $18.000, - Ruedas $35.000",
+    categoryId: 2,
+    subcategoryId: 103,
+    images: [spitfireportada, spitfire1, spitfire2, spitfire3, spitfire4],
   },
               {
     id: 28,
