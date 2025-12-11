@@ -1,0 +1,180 @@
+/* SearchBar Styles */
+
+.search-bar {
+  width: 100%;
+  margin: 0;
+}
+
+.search-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #7f8c8d;
+  font-size: 1rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.search-input::placeholder {
+  color: #95a5a6;
+}
+
+.search-clear-button {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+  z-index: 1;
+}
+
+.search-clear-button:hover {
+  color: #e74c3c;
+}
+
+/* Navbar variant (for Navbar - mobile and desktop) */
+.search-bar-mobile,
+.search-bar-navbar {
+  order: 1;
+  flex: 1;
+  min-width: 0;
+  margin: 0 0.5rem;
+}
+
+.search-bar-mobile .search-input,
+.search-bar-navbar .search-input {
+  padding: 0.625rem 2.5rem 0.625rem 2.25rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+.search-bar-mobile .search-icon,
+.search-bar-navbar .search-icon {
+  font-size: 0.9rem;
+  left: 10px;
+}
+
+.search-bar-mobile .search-clear-button,
+.search-bar-navbar .search-clear-button {
+  right: 10px;
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+}
+
+/* Desktop navbar adjustments */
+@media (min-width: 769px) {
+  .search-bar-navbar {
+    max-width: 400px;
+    margin: 0 1rem;
+  }
+
+  .search-bar-navbar .search-input {
+    padding: 0.75rem 2.75rem 0.75rem 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  .search-bar-navbar .search-icon {
+    font-size: 0.95rem;
+    left: 12px;
+  }
+
+  .search-bar-navbar .search-clear-button {
+    right: 12px;
+  }
+}
+
+/* Desktop variant (for Catalog pages) */
+.search-bar-desktop {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
+}
+
+.search-bar-desktop .search-input {
+  padding: 1rem 3rem 1rem 3.25rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-desktop .search-icon {
+  font-size: 1.1rem;
+  left: 16px;
+}
+
+.search-bar-desktop .search-clear-button {
+  right: 16px;
+  font-size: 1.3rem;
+}
+
+/* Fixed position for desktop */
+.search-bar-fixed {
+  position: sticky;
+  top: 80px; /* Adjust based on navbar height */
+  z-index: 100;
+  background-color: #ffffff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 769px) {
+  .search-bar-fixed {
+    top: 70px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-bar-desktop {
+    display: none;
+  }
+  
+  .search-bar-navbar {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .search-bar-mobile {
+    display: none;
+  }
+  
+  .search-bar-navbar {
+    display: block;
+  }
+}
+

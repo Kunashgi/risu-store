@@ -4,6 +4,8 @@ import { categories } from '../../data/categories';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/page/logo-tienda.png';
 import { useNavigate } from 'react-router-dom';
+import SearchBar from '../SearchBar/SearchBar';
+import CategoryDropdown from './CategoryDropdown';
 import './styles.css';
 
 const Navbar = () => {
@@ -53,7 +55,21 @@ const Navbar = () => {
       />
     </div>
 
-      {/* Lista de navegación */}
+      {/* Buscador - entre logo y categorías (mobile y desktop) */}
+      <SearchBar variant="navbar" />
+
+      {/* Navegación desktop - Inicio y dropdown de categorías */}
+      <div className="navbar-desktop-nav">
+        <Link 
+          to="/" 
+          className="nav-link nav-link-desktop"
+        >
+          Inicio
+        </Link>
+        <CategoryDropdown />
+      </div>
+
+      {/* Lista de navegación mobile */}
       <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
         <li className="nav-item">
           <Link 

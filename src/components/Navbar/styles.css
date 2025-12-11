@@ -19,6 +19,7 @@
   .navbar {
     padding: 1rem 1.5rem;
     justify-content: flex-start;
+    align-items: center;
   }
 }
 
@@ -115,11 +116,22 @@
 
 /* Responsive Design - Mobile First */
 @media (max-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .navbar-logo {
+    order: 0;
+    flex-shrink: 0;
+  }
+
   .menu-toggle {
     display: block;
     font-size: 0.9rem;
     padding: 0.5rem 0.75rem;
     order: 2;
+    flex-shrink: 0;
   }
   
   .menu-icon {
@@ -141,6 +153,7 @@
     top: 100%;
     left: 0;
     right: 0;
+    order: 3;
   }
   
   .nav-list.open {
@@ -311,5 +324,114 @@
 @media (min-width: 480px) {
   .mobile-button-container {
     gap: 0.75rem;
+  }
+}
+
+/* Desktop Navigation - Inicio y Dropdown de Categorías */
+.navbar-desktop-nav {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  order: 2;
+}
+
+@media (min-width: 769px) {
+  .navbar-desktop-nav {
+    display: flex;
+  }
+}
+
+.nav-link-desktop {
+  padding: 0.75rem 1.25rem;
+  white-space: nowrap;
+}
+
+/* Category Dropdown Styles */
+.category-dropdown {
+  position: relative;
+}
+
+.category-dropdown-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  color: #ecf0f1;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.category-dropdown-button:hover {
+  background-color: #34495e;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.dropdown-arrow {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.category-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  background-color: #2c3e50;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0 0 0;
+  min-width: 200px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.category-dropdown-item {
+  margin: 0;
+}
+
+.category-dropdown-link {
+  display: block;
+  padding: 0.875rem 1.25rem;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border-radius: 0;
+}
+
+.category-dropdown-link:hover {
+  background-color: #34495e;
+  color: #ffffff;
+  padding-left: 1.5rem;
+}
+
+/* Ajustes del navbar para desktop con buscador */
+@media (min-width: 769px) {
+  .navbar {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    margin-right: 1.5rem;
+  }
+  
+  .nav-list {
+    display: none;
   }
 }

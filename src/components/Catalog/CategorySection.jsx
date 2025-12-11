@@ -1,9 +1,26 @@
 import React from 'react';
 import ProductCard from './ProductCard';
+import { useSearch } from '../../context/SearchContext';
 import './styles.css';
 
 const CategorySection = ({ category, products }) => {
-  const categoryProducts = products.filter(p => p.categoryId === category.id);
+  const { searchQuery } = useSearch();
+  
+  // Filtrar productos por categoría
+  let categoryProducts = products.filter(p => p.categoryId === category.id);
+  
+  // Si hay una búsqueda activa, filtrar también por el término de búsqueda
+  if (searchQuery.trim()) {
+    const query = searchQuery.toLowerCase().trim();
+    categoryProducts = categoryProducts.filter(product => {
+      return product.name?.toLowerCase().includes(query);
+    });
+  }
+
+  // No mostrar la sección si no hay productos después del filtro
+  if (categoryProducts.length === 0) {
+    return null;
+  }
 
   return (
     <div className="page-container">
