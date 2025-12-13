@@ -37,11 +37,11 @@ import paralelas1 from '../assets/images/products/paralelas1.jpeg';
 import paralelas2 from '../assets/images/products/paralelas2.jpeg';
 import paralelas3 from '../assets/images/products/paralelas3.jpeg';
 import paralelas4 from '../assets/images/products/paralelas4.jpeg';
-import magnesioportada from '../assets/images/products/magnesio-portada.jpeg';
-import magnesio1 from '../assets/images/products/magnesio1.jpeg';
-import magnesio2 from '../assets/images/products/magnesio2.jpeg';
-import magnesio3 from '../assets/images/products/magnesio3.jpeg';
-import magnesio4 from '../assets/images/products/magnesio4.jpeg';
+// import magnesioportada from '../assets/images/products/magnesio-portada.jpeg';
+// import magnesio1 from '../assets/images/products/magnesio1.jpeg';
+// import magnesio2 from '../assets/images/products/magnesio2.jpeg';
+// import magnesio3 from '../assets/images/products/magnesio3.jpeg';
+// import magnesio4 from '../assets/images/products/magnesio4.jpeg';
 import audifonosbtportada from '../assets/images/products/audifonosbt-portada.jpeg';
 import audifonosbt1 from '../assets/images/products/audifonosbt1.jpeg';
 import audifonosbt2 from '../assets/images/products/audifonosbt2.jpeg';
@@ -272,8 +272,8 @@ export const products = [
               {
     id: 30,
     name: "Pack Bandas elásticas de resistencia entrenamiento calistenia / gym (También se vende por separado)",
-    price: "$25.000",
-    description: "Precios por separado: -Roja: $4.000, -Negra:$6.500, -Morada: $9.000, -Verde: $11.000",
+    price: "$32.000",
+    description: "Precios por separado: -Roja: $4.500, -Negra:$7.500, -Morada: $10.500, -Verde: $15.000",
     categoryId: 2,
     subcategoryId: 103,
     images: [bandasportada, bandas1, bandas2, bandas3, bandas4, bandas5],
@@ -288,15 +288,15 @@ export const products = [
     subcategoryId: 103,
     images: [spitfireportada, spitfire1, spitfire2, spitfire3, spitfire4],
   },
-              {
-    id: 28,
-    name: "Magnesio liquido Deporte ( mejora agarre )",
-    price: "$8.000",
-    description: "Magnesio liquido de 100ml, para levantamiento de pesas gimnasio, anillas y calistenia",
-    categoryId: 2,
-    subcategoryId: 103,
-    images: [magnesioportada, magnesio1, magnesio2, magnesio3, magnesio4],
-  },
+  //             {
+  //   id: 28,
+  //   name: "Magnesio liquido Deporte ( mejora agarre )",
+  //   price: "$8.000",
+  //   description: "Magnesio liquido de 100ml, para levantamiento de pesas gimnasio, anillas y calistenia",
+  //   categoryId: 2,
+  //   subcategoryId: 103,
+  //   images: [magnesioportada, magnesio1, magnesio2, magnesio3, magnesio4],
+  // },
   {
     id: 9,
     name: "Skate Nuevo, armado 8 pulgadas, diseños variados",
