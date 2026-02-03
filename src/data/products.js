@@ -164,7 +164,7 @@ export const products = [
     {
     id: 19,
     name: "Parlante Bluetooth inalámbrico Lenovo",
-    price: "$15.000",
+    price: "$14.000",
     description: "Batería de 1200mah es pequeño, facil de transportar a todos lados",
     categoryId: 1,
     subcategoryId: 102,
@@ -173,7 +173,7 @@ export const products = [
 
     {
     id: 14,
-    name: "Cargador carga rápida Samsung 45W",
+    name: "Cargador carga rápida PARA Samsung 45W",
     price: "$8.500",
     description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
     categoryId: 1,
@@ -183,9 +183,9 @@ export const products = [
 
   {
     id: 3,
-    name: "Cargador Rápido tipo C Turbo Xiaomi 67W",
-    price: "$9.500",
-    description: "Cargador carga rápida turbo power Xiaomi 67W, Todos los productos son nuevos Xiaomi 14, 13, 12, 11, 10, 9, Ultra Redmi Note pro",
+    name: "Cargador Rápido tipo C Turbo PARA Xiaomi 67W",
+    price: "$9.000",
+    description: "Cargador carga rápida 67W, compatible con dispotivos Xiaomi",
     categoryId: 1,
     subcategoryId: 102,
     images: [cargadorportada, cargador1, cargador2, cargador3],
@@ -358,7 +358,7 @@ export const products = [
           {
     id: 18,
     name: "Afeitadora / Recortadora de pelo electrica recargable",
-    price: "$8.000",
+    price: "$7.000",
     description: "Máquina para cortar el pelo, incluye 4 peines 3mm, 1.5mm, 4mm y 2mm, y cable para cargar USB",
     categoryId: 3,
     subcategoryId: 102,
@@ -378,7 +378,7 @@ export const products = [
             {
     id: 23,
     name: "Irrigador bucal / Hilo dental de agua, NO usa baterías",
-    price: "$7.500",
+    price: "$7.000",
     description: "Irrigador bucal de agua, funciona como hilo dental sin dañar la encía para nada, no usa baterías.",
     categoryId: 3,
     subcategoryId: 103,
