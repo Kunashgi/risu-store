@@ -42,14 +42,14 @@ const AgendarCompra = () => {
               <h3><FaMapMarkerAlt /> Entregas GRATUITAS en:</h3>
               <ul>
                 <li>Estación Metrotren Lo Blanco 🚅🚅</li>
-                <li>Mi Domicilio: Nacimiento 1379 San Bernardo 🏠🏠 </li>
+                <li>Mi Domicilio: San Bernardo (Dirección por mensaje privado) 🏠🏠 </li>
               </ul>
             </div>
 
                         <div className="delivery-option paid">
               <h3>🛵 Envío a domicilio (cargo adicional):</h3>
               <div className="blue-express-container">
-                <p>Costo de envio a domicilio $3.600 ( Gestionado por Blue Express) </p>
+                <p>Costo de envio a domicilio $3.500 ( Gestionado por Blue Express) </p>
                 <div className="blue-express-logo-wrapper">
                   <img 
                     src={blueExpressLogo} 
@@ -66,13 +66,13 @@ const AgendarCompra = () => {
               </ul>
             </div>
 
-          <div className="delivery-option metro">
+          {/* <div className="delivery-option metro">
     <h3>🚇 Entregas en Estación Metro, ⏰ Horario 13:00PM (Domingo) ⏰</h3>
     <ul>
       <li className="metro"> Los Héroes Línea 1 y 2 🔴 🟡: $1.000 (Adicional) </li>
       <li className="metro"> Santa Ana Línea 2 y 5 🟡 🟢: $1.000 (Adicional) </li>
     </ul>
-  </div>
+  </div> */}
 
 
           </div>
@@ -82,7 +82,7 @@ const AgendarCompra = () => {
           <h2><FaMoneyBillWave /> Información de pago</h2>
           <div className="payment-info">
             <h3>🛍️ Pago en efectivo al retiro:</h3>
-            <p>Puedes pagar con el monto justo al momento de retirar tu producto (no manejamos vuelto).</p>
+            <p>Puedes pagar con el monto justo al momento de retirar tu producto</p>
             
             <div className="protected-data">
               <FaLock className="lock-icon" />
