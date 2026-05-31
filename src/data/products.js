@@ -131,15 +131,15 @@ export const products = [
 
 
 
-  //     {
-  //   id: 17,
-  //   name: "Cargador ORIGINAL Xiaomi 67W Carga rápida /Hyper Charge",
-  //   price: "$14.000",
-  //   description: "Cargador original nuevo Xiaomi, Hyper charge de 67W Carga super rápida ",
-  //   categoryId: 1,
-  //   subcategoryId: 102,
-  //   images: [cargador67wportada, cargador67w1, cargador67w2, cargador67w3, cargador67w4, cargador67w5, cargador67w6],
-  // },
+      {
+    id: 17,
+    name: "Cargador ORIGINAL Xiaomi 67W Carga rápida /Hyper Charge",
+    price: "$17.000",
+    description: "Cargador original nuevo Xiaomi, Hyper charge de 67W Carga super rápida ",
+    categoryId: 1,
+    subcategoryId: 102,
+    images: [cargador67wportada, cargador67w1, cargador67w2, cargador67w3, cargador67w4, cargador67w5, cargador67w6],
+  },
 
   //       {
   //   id: 25,
@@ -174,7 +174,7 @@ export const products = [
     {
     id: 14,
     name: "Cargador carga rápida PARA Samsung 45W",
-    price: "$8.500",
+    price: "$9.000",
     description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
     categoryId: 1,
     subcategoryId: 102,
@@ -200,19 +200,19 @@ export const products = [
     images: [mouseinportada, mousein1, mousein2, mousein3],
   },
 
-            {
-    id: 22,
-    name: "Teclado sensación mecánico gamer retro iluminado RGB Ergonómico",
-    price: "$19.000",
-    description: "Teclado sensación mecánico, gamer retro iluminado ergonómico, sin teclado numérico, tamaño pequeño",
-    categoryId: 1,
-    subcategoryId: 103,
-    images: [mecanicoportada, mecanico1, mecanico2, mecanico3, mecanico4],
-  },
+  //           {
+  //   id: 22,
+  //   name: "Teclado sensación mecánico gamer retro iluminado RGB Ergonómico",
+  //   price: "$19.000",
+  //   description: "Teclado sensación mecánico, gamer retro iluminado ergonómico, sin teclado numérico, tamaño pequeño",
+  //   categoryId: 1,
+  //   subcategoryId: 103,
+  //   images: [mecanicoportada, mecanico1, mecanico2, mecanico3, mecanico4],
+  // },
     {
     id: 12,
     name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
-    price: "$16.500",
+    price: "$18.000",
     description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
     categoryId: 1,
     subcategoryId: 202,
@@ -252,7 +252,7 @@ export const products = [
           {
     id: 26,
     name: "Pelota Voleibol Mikasa v200W ORIGINAL NUEVA",
-    price: "$32.000",
+    price: "$35.000",
     description: "Pelota nueva y original Mikasa de voleibol modelo v200W ",
     categoryId: 2,
     subcategoryId: 103,
@@ -262,7 +262,7 @@ export const products = [
             {
     id: 27,
     name: "Mini paralelas de madera CALISTENIA rectas",
-    price: "$17.000",
+    price: "$20.000",
     description: "Mini paralelas de 20cm, rectas de madera, incluyen cintas y Anti deslizante",
     categoryId: 2,
     subcategoryId: 103,
@@ -348,7 +348,7 @@ export const products = [
   {
     id: 13,
     name: "Dilatador Nasal Anti Ronquido Magnetico Tiras Nariz",
-    price: "$8.500",
+    price: "$9.000",
     description: "Tiras nasales magnéticas  anti ronquidos y dilatador nasal que ayuda a aumentar el oxigeno y disminuir resequedad, contiene 15 parches magnéticos",
     categoryId: 3,
     subcategoryId: 202,
