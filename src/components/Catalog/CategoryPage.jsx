@@ -41,7 +41,7 @@ const CategoryPage = () => {
 
       <div className="mobile-panel" onClick={handleButtonClick}>
         <span className="mobile-delivery-text-simple">
-          Envíos a domicilio disponibles a $3.500 con Blue Express
+          Envíos a domicilio disponibles a $2.900 con Blue Express
         </span>
         <div className="mobile-whatsapp-icon-simple">
           <FaWhatsapp />
@@ -53,7 +53,7 @@ const CategoryPage = () => {
           <div className="delivery-info-content">
             <div className="delivery-info-text">
               <p className="delivery-main-text">
-                Envíos a domicilio disponibles a $3.500 con Blue Express dentro de la Región Metropolitana
+                Envíos a domicilio disponibles a $2.900 con Blue Express dentro de la Región Metropolitana
               </p>
               <p className="delivery-sub-text">
                 Coordinar por WhatsApp
