@@ -122,7 +122,7 @@ export const products = [
     {
     id: 16,
     name: "Cargador ORIGINAL Xiaomi 120W Carga rápida / Hyper charge",
-    price: "$19.000",
+    price: "$15.000",
     description: "Cargador original nuevo Xiaomi , Hyper charge de 120W, Carga super rápida",
     categoryId: 1,
     subcategoryId: 102,
@@ -134,7 +134,7 @@ export const products = [
       {
     id: 17,
     name: "Cargador ORIGINAL Xiaomi 67W Carga rápida /Hyper Charge",
-    price: "$17.000",
+    price: "$14.000",
     description: "Cargador original nuevo Xiaomi, Hyper charge de 67W Carga super rápida ",
     categoryId: 1,
     subcategoryId: 102,
@@ -154,7 +154,7 @@ export const products = [
           {
     id: 28,
     name: "Audífonos Bluetooth inalámbricos In-Ear LENOVO",
-    price: "$9.000",
+    price: "$8.000",
     description: "audífonos Bluetooth Lenovo, cómodos incluyen envase para cargar ",
     categoryId: 1,
     subcategoryId: 102,
@@ -164,7 +164,7 @@ export const products = [
     {
     id: 19,
     name: "Parlante Bluetooth inalámbrico Lenovo",
-    price: "$14.000",
+    price: "$12.000",
     description: "Batería de 1200mah es pequeño, facil de transportar a todos lados",
     categoryId: 1,
     subcategoryId: 102,
@@ -174,7 +174,7 @@ export const products = [
     {
     id: 14,
     name: "Cargador carga rápida PARA Samsung 45W",
-    price: "$9.000",
+    price: "$8.000",
     description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
     categoryId: 1,
     subcategoryId: 102,
@@ -184,7 +184,7 @@ export const products = [
   {
     id: 3,
     name: "Cargador Rápido tipo C Turbo PARA Xiaomi 67W",
-    price: "$9.000",
+    price: "$8.000",
     description: "Cargador carga rápida 67W, compatible con dispotivos Xiaomi",
     categoryId: 1,
     subcategoryId: 102,
@@ -193,7 +193,7 @@ export const products = [
         {
     id: 15,
     name: "Mouse inalámbrico gamer, ergonómico",
-    price: "$6.500",
+    price: "$6.000",
     description: "Mouse inalámbrico funciona por usb, tiene control dpi 1600, 6 botones y es silencioso ",
     categoryId: 1,
     subcategoryId: 102,
@@ -212,7 +212,7 @@ export const products = [
     {
     id: 12,
     name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
-    price: "$18.000",
+    price: "$16.000",
     description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
     categoryId: 1,
     subcategoryId: 202,
@@ -252,7 +252,7 @@ export const products = [
           {
     id: 26,
     name: "Pelota Voleibol Mikasa v200W ORIGINAL NUEVA",
-    price: "$35.000",
+    price: "$30.000",
     description: "Pelota nueva y original Mikasa de voleibol modelo v200W ",
     categoryId: 2,
     subcategoryId: 103,
@@ -262,7 +262,7 @@ export const products = [
             {
     id: 27,
     name: "Mini paralelas de madera CALISTENIA rectas",
-    price: "$20.000",
+    price: "$18.000",
     description: "Mini paralelas de 20cm, rectas de madera, incluyen cintas y Anti deslizante",
     categoryId: 2,
     subcategoryId: 103,
@@ -348,7 +348,7 @@ export const products = [
   {
     id: 13,
     name: "Dilatador Nasal Anti Ronquido Magnetico Tiras Nariz",
-    price: "$9.000",
+    price: "$7.000",
     description: "Tiras nasales magnéticas  anti ronquidos y dilatador nasal que ayuda a aumentar el oxigeno y disminuir resequedad, contiene 15 parches magnéticos",
     categoryId: 3,
     subcategoryId: 202,
