@@ -30,7 +30,7 @@ const CatalogPage = () => {
       {/* Panel móvil (solo visible en mobile) */}
       <div className="mobile-panel" onClick={handleButtonClick}>
         <span className="mobile-delivery-text-simple">
-          Envíos a domicilio disponibles a $2.900 con blue express
+          Retiro y Metro Lo Blanco GRATIS · Envío Blue Express desde $2.900
         </span>
         <div className="mobile-whatsapp-icon-simple">
           <FaWhatsapp />
@@ -43,7 +43,7 @@ const CatalogPage = () => {
           <div className="delivery-info-content">
             <div className="delivery-info-text">
               <p className="delivery-main-text">
-                Envíos a domicilio disponibles a $2.900 con Blue Express dentro de la Región Metropolitana
+                Retiro GRATIS en San Bernardo y entrega GRATIS en Metro Lo Blanco. Envío a domicilio por Blue Express desde $2.900.
               </p>
               <p className="delivery-sub-text">
                 Coordinar por WhatsApp

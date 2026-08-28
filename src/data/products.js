@@ -122,7 +122,7 @@ export const products = [
     {
     id: 16,
     name: "Cargador ORIGINAL Xiaomi 120W Carga rápida / Hyper charge",
-    price: "$15.000",
+    price: "$16.000",
     description: "Cargador original nuevo Xiaomi , Hyper charge de 120W, Carga super rápida",
     categoryId: 1,
     subcategoryId: 102,

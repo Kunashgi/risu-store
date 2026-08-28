@@ -38,43 +38,30 @@ const AgendarCompra = () => {
 
           <div className="delivery-section">
             <h2><FaTruck /> Opciones de entrega</h2>
+
             <div className="delivery-option free">
-              <h3><FaMapMarkerAlt /> Entregas GRATUITAS en:</h3>
-              <ul>
-                <li>Estación Metrotren Lo Blanco 🚅🚅</li>
-                <li>Mi Domicilio: San Bernardo (Dirección por mensaje privado) 🏠🏠 </li>
-              </ul>
+              <h3><FaMapMarkerAlt /> Retiro GRATIS</h3>
+              <p>Cualquier día en Nacimiento 1379, San Bernardo (solo coordinar horario).</p>
             </div>
 
-                        <div className="delivery-option paid">
-              <h3>🛵 Envío a domicilio (cargo adicional):</h3>
+            <div className="delivery-option free">
+              <h3>🚇 Entrega GRATIS en Metro Lo Blanco</h3>
+              <p>Lunes a jueves, 14:00–16:00.</p>
+            </div>
+
+            <div className="delivery-option paid">
+              <h3>📦 Envío a domicilio por Blue Express</h3>
               <div className="blue-express-container">
-                <p>Costo de envio a domicilio $2.900 ( Gestionado por Blue Express) </p>
+                <p>Desde $2.900 (según producto). Demora aprox. 48 h desde el despacho.</p>
                 <div className="blue-express-logo-wrapper">
-                  <img 
-                    src={blueExpressLogo} 
-                    alt="Logo Blue Express" 
+                  <img
+                    src={blueExpressLogo}
+                    alt="Logo Blue Express"
                     className="blue-express-logo"
                   />
                 </div>
               </div>
-              <ul>
-                {/* <li className="green">🟢 $1.000 – $2.000: San Bernardo, El Bosque, La Cisterna, Lo Espejo, La Pintana</li>
-                <li className="yellow">🟡 $2.000 – $3.000: Maipú, Cerrillos, San Miguel, La Florida, Estación Central, PAC</li>
-                <li className="orange">🟠 $3.000 – $4.000: Santiago Centro, Providencia, Ñuñoa, Macul, Peñalolén</li>
-                <li className="red">🔴 $4.000 – $5.000: Las Condes, Vitacura, Quilicura, Lo Barnechea, Pudahuel, etc.</li> */}
-              </ul>
             </div>
-
-          {/* <div className="delivery-option metro">
-    <h3>🚇 Entregas en Estación Metro, ⏰ Horario 13:00PM (Domingo) ⏰</h3>
-    <ul>
-      <li className="metro"> Los Héroes Línea 1 y 2 🔴 🟡: $1.000 (Adicional) </li>
-      <li className="metro"> Santa Ana Línea 2 y 5 🟡 🟢: $1.000 (Adicional) </li>
-    </ul>
-  </div> */}
-
-
           </div>
         </div>
 
