@@ -115,6 +115,16 @@ import mouseinportada from '../assets/images/products/mousein-portada.jpg';
 import mousein1 from '../assets/images/products/mousein1.jpg';
 import mousein2 from '../assets/images/products/mousein2.jpg';
 import mousein3 from '../assets/images/products/mousein3.jpg';
+import rubik3x3portada from '../assets/images/products/rubik3x3-portada.jpg';
+import rubik3x31 from '../assets/images/products/rubik3x3-1.jpeg';
+import rubik3x32 from '../assets/images/products/rubik3x3-2.jpeg';
+import rubik3x33 from '../assets/images/products/rubik3x3-3.jpeg';
+import rubik3x34 from '../assets/images/products/rubik3x3-4.jpeg';
+import rubik2x2portada from '../assets/images/products/rubik2x2-portada.jpg';
+import rubik2x21 from '../assets/images/products/rubik2x2-1.jpeg';
+import rubik2x22 from '../assets/images/products/rubik2x2-2.jpeg';
+import rubik2x23 from '../assets/images/products/rubik2x2-3.jpeg';
+import rubik2x24 from '../assets/images/products/rubik2x2-4.jpeg';
 
 
 export const products = [
@@ -343,7 +353,27 @@ export const products = [
     images: [ruedaportada],
   },
 
- //OTROS 
+ //OTROS
+
+  {
+    id: 32,
+    name: "Cubo Rubik 3x3 Profesional",
+    price: "$8.000",
+    description: "Cubo rapido y ligero con cortes de esquinas",
+    categoryId: 3,
+    subcategoryId: 103,
+    images: [rubik3x3portada, rubik3x31, rubik3x32, rubik3x33, rubik3x34],
+  },
+
+  {
+    id: 33,
+    name: "Cubo Rubik 2x2 Profesional",
+    price: "$8.000",
+    description: "Cubo rapido y ligero con cortes de esquinas",
+    categoryId: 3,
+    subcategoryId: 103,
+    images: [rubik2x2portada, rubik2x21, rubik2x22, rubik2x23, rubik2x24],
+  },
 
   {
     id: 13,
