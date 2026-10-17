@@ -184,7 +184,7 @@ export const products = [
     {
     id: 14,
     name: "Cargador carga rápida PARA Samsung 45W",
-    price: "$8.000",
+    price: "$8.500",
     description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
     categoryId: 1,
     subcategoryId: 102,
@@ -203,7 +203,7 @@ export const products = [
         {
     id: 15,
     name: "Mouse inalámbrico gamer, ergonómico",
-    price: "$6.000",
+    price: "$6.500",
     description: "Mouse inalámbrico funciona por usb, tiene control dpi 1600, 6 botones y es silencioso ",
     categoryId: 1,
     subcategoryId: 102,
@@ -222,7 +222,7 @@ export const products = [
     {
     id: 12,
     name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
-    price: "$16.000",
+    price: "$17.000",
     description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
     categoryId: 1,
     subcategoryId: 202,
@@ -378,7 +378,7 @@ export const products = [
   {
     id: 13,
     name: "Dilatador Nasal Anti Ronquido Magnetico Tiras Nariz",
-    price: "$7.000",
+    price: "$8.500",
     description: "Tiras nasales magnéticas  anti ronquidos y dilatador nasal que ayuda a aumentar el oxigeno y disminuir resequedad, contiene 15 parches magnéticos",
     categoryId: 3,
     subcategoryId: 202,
