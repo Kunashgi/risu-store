@@ -379,7 +379,7 @@ export const products = [
     id: 13,
     name: "Dilatador Nasal Anti Ronquido Magnetico Tiras Nariz",
     price: "$8.500",
-    description: "Tiras nasales magnéticas  anti ronquidos y dilatador nasal que ayuda a aumentar el oxigeno y disminuir resequedad, contiene 15 parches magnéticos",
+    description: "Tiras nasales magnéticas  anti ronquidos y dilatador nasal que ayuda a aumentar el oxigeno y disminuir resequedad, contiene 30 parches magnéticos",
     categoryId: 3,
     subcategoryId: 202,
     images: [respiradorportada, respirador1, respirador2],
