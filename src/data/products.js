@@ -222,7 +222,7 @@ export const products = [
     {
     id: 12,
     name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
-    price: "$17.000",
+    price: "$18.000",
     description: "Teclado + Mouse inalámbricos, con control de iluminación ( trae varios colores ), Compatible con iPad, IOS, Android, Windows y PC",
     categoryId: 1,
     subcategoryId: 202,
