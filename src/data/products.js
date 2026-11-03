@@ -262,7 +262,7 @@ export const products = [
           {
     id: 26,
     name: "Pelota Voleibol Mikasa v200W ORIGINAL NUEVA",
-    price: "$30.000",
+    price: "$45.000",
     description: "Pelota nueva y original Mikasa de voleibol modelo v200W ",
     categoryId: 2,
     subcategoryId: 103,
