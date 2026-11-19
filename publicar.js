@@ -331,8 +331,11 @@ function mostrarProducto(id, pl, n, total) {
   console.log(`Título: ${pl.titulo}`);
   console.log(`Portada: ${pl.portada || c.r('(sin fotos)')}  · ${pl.portada ? pl.fotos.length + 1 : 0} fotos`);
   for (const a of pl.avisos || []) aviso(a);
-  console.log(c.b(`Grupos a marcar (${pl.grupos.length}):`));
-  pl.grupos.forEach((g) => console.log('  ☐ ' + g));
+}
+
+function mostrarGrupos(pl) {
+  console.log(c.b(`  Grupos a marcar (${pl.grupos.length}):`));
+  pl.grupos.forEach((g) => console.log('    ☐ ' + g));
 }
 
 // ---------- borrar las publicaciones antiguas (lo hace Claude Code con la extensión de Chrome) ----------
@@ -463,11 +466,13 @@ async function modoInteractivo(cfg, forzarNueva, tandaPedida) {
       const id = lista[i];
       const pl = plan.productos[id];
       mostrarProducto(id, pl, i + 1, lista.length);
+      // mismo orden que el formulario de Marketplace: fotos → título → precio → descripción → (Siguiente) grupos
       const pasos = [
+        ['abrir carpeta de fotos', () => { abrirCarpeta(carpetaHoy(id, plan)); console.log(c.g('  ✔ Carpeta abierta (arrastra las fotos en orden)')); }],
         ['copiar TÍTULO', () => copiar(pl.titulo) && console.log(c.g('  ✔ Título copiado'))],
         ['copiar PRECIO', () => pl.precio != null ? copiar(pl.precio) && console.log(c.g(`  ✔ Precio copiado (${pl.precio})`)) : aviso('Sin precio')],
         ['copiar DESCRIPCIÓN', () => copiar(textoDescripcion(pl, cfg)) && console.log(c.g('  ✔ Descripción copiada'))],
-        ['abrir carpeta de fotos', () => { abrirCarpeta(carpetaHoy(id, plan)); console.log(c.g('  ✔ Carpeta abierta (arrastra las fotos en orden)')); }],
+        ['ver GRUPOS a marcar', () => mostrarGrupos(pl)],
         ['marcar como PUBLICADO', () => {
           pl.estado = 'publicado';
           pl.publicadoEn = new Date().toISOString();
