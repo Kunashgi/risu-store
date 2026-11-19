@@ -3,6 +3,8 @@
  * publicar.js — Asistente semanal para republicar en Facebook Marketplace.
  * NO se conecta a Facebook ni automatiza el navegador: solo elige textos/fotos/precio,
  * prepara la carpeta publicaciones/hoy/ y copia cada dato al portapapeles.
+ * Antes de cada tanda imprime (y copia) un prompt para que Claude Code borre las publicaciones
+ * antiguas con la extensión de Chrome; el script en sí nunca toca Facebook.
  *
  *   node publicar.js              → modo interactivo: elige la tanda según la hora
  *                                   (antes de las 17:00 = mañana, después = noche)
@@ -333,6 +335,38 @@ function mostrarProducto(id, pl, n, total) {
   pl.grupos.forEach((g) => console.log('  ☐ ' + g));
 }
 
+// ---------- borrar las publicaciones antiguas (lo hace Claude Code con la extensión de Chrome) ----------
+// Última vez que el producto quedó publicado antes del plan actual = la publicación que hoy está en Marketplace
+function publicacionAnterior(hist, plan, id) {
+  for (let k = hist.semanas.length - 1; k >= 0; k--) {
+    const s = hist.semanas[k];
+    if (s === plan || s.semana === plan.semana) continue;
+    const p = s.productos[id];
+    if (p && p.estado === 'publicado') return { ...p, semana: s.semana };
+  }
+  return null;
+}
+
+function promptBorrado(items, tandas) {
+  const lista = items.map(({ pl, ant }, i) => ant
+    ? `${i + 1}. "${ant.titulo}" — ${ant.precio != null ? pesos(ant.precio) : 'sin precio'}` +
+      `  (producto: ${pl.nombre}; publicada ${ant.publicadoEn ? ant.publicadoEn.slice(0, 10) : 'la semana ' + ant.semana})`
+    : `${i + 1}. ${pl.nombre} — NO hay registro de cómo quedó publicada: búscala por el nombre del producto y pregúntame antes de borrarla`);
+  return [
+    'Usa la extensión Claude in Chrome para borrar mis publicaciones antiguas de Facebook Marketplace, antes de que suba las nuevas.',
+    '',
+    '1. Abre una pestaña nueva en https://www.facebook.com/marketplace/you/selling (ya tengo la sesión iniciada).',
+    '2. Busca cada publicación de la lista por su título (el precio sirve para confirmar) y elimínala.',
+    '   Si Facebook pregunta si la vendiste, elige la opción que NO diga que la vendí en Facebook.',
+    '3. Borra SOLO lo que está en la lista. Si hay más de una que calza o el título no coincide, no la borres y pregúntame.',
+    '   Si una no aparece, sáltala (puede que ya la haya borrado).',
+    '4. Al terminar, dime cuáles borraste y cuáles no.',
+    '',
+    `Publicaciones a borrar (tanda de la ${tandas.join(' y ')}):`,
+    ...lista,
+  ].join('\n');
+}
+
 function checklistB(cfg) {
   const B = cfg.productos.filter((p) => p.tier === 'B' && !p.inactivo);
   if (!B.length) return;
@@ -398,6 +432,21 @@ async function modoInteractivo(cfg, forzarNueva, tandaPedida) {
     const r = await preguntar(`${c.y(`Quedaron ${n} pendiente(s) de la mañana.`)} [Enter] hacerlos primero, n = solo la noche, q = salir: `);
     if (r === 'q') salir = true;
     else if (r !== 'n') tandas = ['mañana', 'noche'];
+  }
+
+  // antes de subir: prompt para que Claude Code borre las publicaciones antiguas de lo que toca hoy
+  const aBorrar = salir ? [] : tandas.flatMap((t) => pendientesDe(t))
+    .map((id) => ({ pl: plan.productos[id], ant: publicacionAnterior(hist, plan, id) }));
+  if (aBorrar.length) {
+    const texto = promptBorrado(aBorrar, tandas);
+    console.log('\n' + c.b('════ Antes de subir: borrar las publicaciones antiguas ════'));
+    const copiado = copiar(texto);
+    if (copiado) {
+      console.log(c.d('Pega esto en Claude Code (ya quedó copiado en el portapapeles):') + '\n');
+      console.log(texto);
+    }
+    const r = await preguntar(`\n  [Enter] cuando estén borradas ${c.d('(q = salir)')} `);
+    if (r === 'q') salir = true;
   }
 
   for (let t = 0; t < tandas.length && !salir; t++) {
