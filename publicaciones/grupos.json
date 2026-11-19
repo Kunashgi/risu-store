@@ -1,0 +1,46 @@
+{
+  "maxGruposPorPublicacion": 15,
+  "grupos": {
+    "san-bernardo": [
+      "SAN BERNARDO COMPRA Y VENDE LO QUE NESESITAS",
+      "feria de las pulgas San Bernardo",
+      "la vara - San Bernardo",
+      "San Bernardo Vende",
+      "compra y venta San Bernardo Y Alrededores",
+      "Avisos y ventas San Bernardo",
+      "Ventas en san bernardo"
+    ],
+    "santiago": [
+      "GRUPO DE VENTAS SANTIAGO Y COMUNAS",
+      "todo ventas santiago",
+      "VENTAS SANTIAGO - CHILE",
+      "ventas Santiago Chile",
+      "SANTIAGO VENDE",
+      "Santiago compra y venta",
+      "compra y venta (sector sur stgo)",
+      "COMPRA Y VENTA SANTIAGO DE CHILE"
+    ],
+    "voley": [
+      "ENTRENAMIENTOS LIBRES DE VOLEIBOL",
+      "Aprende sobre Voleibol",
+      "Buscando equipo voleibol",
+      "Liga Interregional de Voleibol",
+      "Taller municipal de voleibol",
+      "Voleibol Santiago",
+      "Comunidad Voleibol amateur",
+      "Volley Amateur Chile"
+    ],
+    "tecnologia": [
+      "Celu Chile \"Santiago\" Compra y Venta",
+      "Venta,compra Y Permutas tecnología",
+      "Celumania Santiago",
+      "Compra y venta de accesorios para celulares, notebook y consolas en Santiago",
+      "Compra y Venta de Tecnología - Santiago - Chile"
+    ],
+    "starbucks": [
+      "STARBUCKS CHILE - COLECCIONES EN VENTA",
+      "Vasos y palomeras CHILE",
+      "Venta de vasos starbucks Chile"
+    ]
+  }
+}

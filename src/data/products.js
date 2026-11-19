@@ -22,11 +22,6 @@ import cargador120w3 from '../assets/images/products/cargador120w3.jpeg';
 import cargador120w4 from '../assets/images/products/cargador120w4.jpeg';
 import cargador120w5 from '../assets/images/products/cargador120w5.jpeg';
 import cargador120w6 from '../assets/images/products/cargador120w6.jpeg';
-// import botellaportada from '../assets/images/products/botella-portada.jpeg';
-// import botella1 from '../assets/images/products/botella1.jpeg';
-// import botella2 from '../assets/images/products/botella2.jpeg';
-// import botella3 from '../assets/images/products/botella3.jpeg';
-// import botella4 from '../assets/images/products/botella4.jpeg';
 import mikasaportada from '../assets/images/products/mikasa-portada.jpeg';
 import mikasa1 from '../assets/images/products/mikasa1.jpeg';
 import mikasa2 from '../assets/images/products/mikasa2.jpeg';
@@ -37,11 +32,6 @@ import paralelas1 from '../assets/images/products/paralelas1.jpeg';
 import paralelas2 from '../assets/images/products/paralelas2.jpeg';
 import paralelas3 from '../assets/images/products/paralelas3.jpeg';
 import paralelas4 from '../assets/images/products/paralelas4.jpeg';
-// import magnesioportada from '../assets/images/products/magnesio-portada.jpeg';
-// import magnesio1 from '../assets/images/products/magnesio1.jpeg';
-// import magnesio2 from '../assets/images/products/magnesio2.jpeg';
-// import magnesio3 from '../assets/images/products/magnesio3.jpeg';
-// import magnesio4 from '../assets/images/products/magnesio4.jpeg';
 import audifonosbtportada from '../assets/images/products/audifonosbt-portada.jpeg';
 import audifonosbt1 from '../assets/images/products/audifonosbt1.jpeg';
 import audifonosbt2 from '../assets/images/products/audifonosbt2.jpeg';
@@ -52,11 +42,6 @@ import irrigador1 from '../assets/images/products/irrigador1.jpeg';
 import irrigador2 from '../assets/images/products/irrigador2.jpeg';
 import irrigador3 from '../assets/images/products/irrigador3.jpeg';
 import irrigador4 from '../assets/images/products/irrigador4.jpeg';
-// import mecanicoportada from '../assets/images/products/mecanico-portada.jpeg';
-// import mecanico1 from '../assets/images/products/mecanico1.jpeg';
-// import mecanico2 from '../assets/images/products/mecanico2.jpeg';
-// import mecanico3 from '../assets/images/products/mecanico3.jpeg';
-// import mecanico4 from '../assets/images/products/mecanico4.jpeg';
 import parlanteportada from '../assets/images/products/parlante-portada.jpeg';
 import parlante1 from '../assets/images/products/parlante1.jpeg';
 import parlante2 from '../assets/images/products/parlante2.jpeg';
@@ -102,11 +87,6 @@ import teclado2 from '../assets/images/products/teclado2.jpg';
 import respiradorportada from '../assets/images/products/respirador-portada.jpg';
 import respirador1 from '../assets/images/products/respirador1.jpg';
 import respirador2 from '../assets/images/products/respirador2.jpg';
-// import cargadororiginalsamsungportada from '../assets/images/products/cargadororiginalsamsung-portada.jpg';
-// import cargadororiginalsamsung1 from '../assets/images/products/cargadororiginalsamsung1.jpeg';
-// import cargadororiginalsamsung2 from '../assets/images/products/cargadororiginalsamsung2.jpeg';
-// import cargadororiginalsamsung3 from '../assets/images/products/cargadororiginalsamsung3.jpeg';
-// import cargadororiginalsamsung4 from '../assets/images/products/cargadororiginalsamsung4.jpeg';
 import cargadorsamportada from '../assets/images/products/cargadorsam-portada.jpg';
 import cargadorsam1 from '../assets/images/products/cargadorsam1.jpg';
 import cargadorsam2 from '../assets/images/products/cargadorsam2.jpg';
@@ -125,14 +105,38 @@ import rubik2x21 from '../assets/images/products/rubik2x2-1.jpeg';
 import rubik2x22 from '../assets/images/products/rubik2x2-2.jpeg';
 import rubik2x23 from '../assets/images/products/rubik2x2-3.jpeg';
 import rubik2x24 from '../assets/images/products/rubik2x2-4.jpeg';
+import vasoverdeportada from '../assets/images/products/vaso-verde-portada.jpg';
+import vasoverde1 from '../assets/images/products/vaso-verde1.jpg';
+import vasoverde2 from '../assets/images/products/vaso-verde2.jpg';
+import vasoverde3 from '../assets/images/products/vaso-verde3.jpg';
+import vasoverde4 from '../assets/images/products/vaso-verde4.jpg';
+import vasorosaportada from '../assets/images/products/vaso-rosa-portada.jpg';
+import vasorosa1 from '../assets/images/products/vaso-rosa1.jpg';
+import vasorosa2 from '../assets/images/products/vaso-rosa2.jpg';
+import vasorosa3 from '../assets/images/products/vaso-rosa3.jpg';
+import vasosnoopyportada from '../assets/images/products/vaso-snoopy-portada.jpg';
+import vasosnoopy1 from '../assets/images/products/vaso-snoopy1.jpg';
+import vasosnoopy2 from '../assets/images/products/vaso-snoopy2.jpg';
+import vasosnoopy3 from '../assets/images/products/vaso-snoopy3.jpg';
+import vasosnoopy4 from '../assets/images/products/vaso-snoopy4.jpg';
+import mikasavnlportada from '../assets/images/products/mikasa-vnl-portada.jpg';
+import mikasavnl1 from '../assets/images/products/mikasa-vnl1.jpg';
+import mikasavnl2 from '../assets/images/products/mikasa-vnl2.jpg';
+import mikasavnl3 from '../assets/images/products/mikasa-vnl3.jpg';
+import mikasavnl4 from '../assets/images/products/mikasa-vnl4.jpg';
+
+// Productos destacados: se muestran primero en la portada, en este orden.
+export const featuredIds = [26, 35, 37, 16, 34, 36, 17, 13, 12, 15];
 
 
 export const products = [
-  // Tecnología - Computadoras
+  // TECNOLOGÍA
     {
     id: 16,
+    keywords: "celular",
     name: "Cargador ORIGINAL Xiaomi 120W Carga rápida / Hyper charge",
     price: "$16.000",
+    tag: "ORIGINAL",
     description: "Cargador original nuevo Xiaomi , Hyper charge de 120W, Carga super rápida",
     categoryId: 1,
     subcategoryId: 102,
@@ -143,23 +147,16 @@ export const products = [
 
       {
     id: 17,
+    keywords: "celular",
     name: "Cargador ORIGINAL Xiaomi 67W Carga rápida /Hyper Charge",
     price: "$14.000",
+    tag: "ORIGINAL",
     description: "Cargador original nuevo Xiaomi, Hyper charge de 67W Carga super rápida ",
     categoryId: 1,
     subcategoryId: 102,
     images: [cargador67wportada, cargador67w1, cargador67w2, cargador67w3, cargador67w4, cargador67w5, cargador67w6],
   },
 
-  //       {
-  //   id: 25,
-  //   name: "Cargador ORIGINAL Samsung, Carga SUPER rápida 45W",
-  //   price: "$18.000",
-  //   description: "Cargador original Samsung 45W cara super rápido, cable 1.8M ",
-  //   categoryId: 1,
-  //   subcategoryId: 102,
-  //   images: [cargadororiginalsamsungportada, cargadororiginalsamsung1, cargadororiginalsamsung2, cargadororiginalsamsung3, cargadororiginalsamsung4],
-  // },
 
           {
     id: 28,
@@ -183,6 +180,7 @@ export const products = [
 
     {
     id: 14,
+    keywords: "celular",
     name: "Cargador carga rápida PARA Samsung 45W",
     price: "$8.500",
     description: "Cargador carga rápida para celulares Samsung de 45W, Samsung Galaxy S24 S23 Ultra Note 10 Plus",
@@ -193,6 +191,7 @@ export const products = [
 
   {
     id: 3,
+    keywords: "celular",
     name: "Cargador Rápido tipo C Turbo PARA Xiaomi 67W",
     price: "$8.000",
     description: "Cargador carga rápida 67W, compatible con dispotivos Xiaomi",
@@ -210,15 +209,6 @@ export const products = [
     images: [mouseinportada, mousein1, mousein2, mousein3],
   },
 
-  //           {
-  //   id: 22,
-  //   name: "Teclado sensación mecánico gamer retro iluminado RGB Ergonómico",
-  //   price: "$19.000",
-  //   description: "Teclado sensación mecánico, gamer retro iluminado ergonómico, sin teclado numérico, tamaño pequeño",
-  //   categoryId: 1,
-  //   subcategoryId: 103,
-  //   images: [mecanicoportada, mecanico1, mecanico2, mecanico3, mecanico4],
-  // },
     {
     id: 12,
     name: "Kit Teclado y Mouse inalámbrico Bluetooth RGB",
@@ -258,15 +248,29 @@ export const products = [
     images: [mouseportada, mouse1, mouse2],
   },
 
-  //   // Deportes - Fútbol
+  // DEPORTES
           {
     id: 26,
+    keywords: "voley volley balon",
     name: "Pelota Voleibol Mikasa v200W ORIGINAL NUEVA",
-    price: "$45.000",
+    price: "$40.000",
+    tag: "ORIGINAL",
     description: "Pelota nueva y original Mikasa de voleibol modelo v200W ",
     categoryId: 2,
     subcategoryId: 103,
     images: [mikasaportada, mikasa1, mikasa2, mikasa3, mikasa4],
+  },
+
+  {
+    id: 34,
+    keywords: "voley volley balon",
+    name: "Pelota Vóleibol Mikasa V200W edición VNL",
+    price: "$30.000",
+    tag: "Nuevo",
+    description: "Pelota de vóley Mikasa V200W edición VNL (Volleyball Nations League), nueva. Buen toque y agarre, ideal para entrenar, talleres o jugar con amigos.",
+    categoryId: 2,
+    subcategoryId: 103,
+    images: [mikasavnlportada, mikasavnl1, mikasavnl2, mikasavnl3, mikasavnl4],
   },
 
             {
@@ -298,15 +302,6 @@ export const products = [
     subcategoryId: 103,
     images: [spitfireportada, spitfire1, spitfire2, spitfire3, spitfire4],
   },
-  //             {
-  //   id: 28,
-  //   name: "Magnesio liquido Deporte ( mejora agarre )",
-  //   price: "$8.000",
-  //   description: "Magnesio liquido de 100ml, para levantamiento de pesas gimnasio, anillas y calistenia",
-  //   categoryId: 2,
-  //   subcategoryId: 103,
-  //   images: [magnesioportada, magnesio1, magnesio2, magnesio3, magnesio4],
-  // },
   {
     id: 9,
     name: "Skate Nuevo, armado 8 pulgadas, diseños variados",
@@ -353,6 +348,44 @@ export const products = [
     images: [ruedaportada],
   },
 
+ // VASOS Y REGALOS
+
+  {
+    id: 35,
+    keywords: "taza regalo oso",
+    name: "Vaso Starbucks ORIGINAL oso gorro verde 591 ml",
+    price: "$15.000",
+    tag: "ORIGINAL",
+    description: "Vaso Starbucks ORIGINAL osito de vidrio con gorrito verde, nuevo. Capacidad 591 ml (20 oz), incluye su bombilla. Ideal para regalo o para tu colección.",
+    categoryId: 4,
+    subcategoryId: 401,
+    images: [vasoverdeportada, vasoverde1, vasoverde2, vasoverde3, vasoverde4],
+  },
+
+  {
+    id: 37,
+    keywords: "taza regalo",
+    name: "Vaso Starbucks Snoopy ORIGINAL edición invierno",
+    price: "$20.000",
+    tag: "ORIGINAL",
+    description: "Vaso Starbucks Snoopy ORIGINAL, nuevo. Con gorrito naranjo, bufanda tejida verde y bombilla con Woodstock. Un regalo perfecto para fans de Snoopy.",
+    categoryId: 4,
+    subcategoryId: 401,
+    images: [vasosnoopyportada, vasosnoopy1, vasosnoopy2, vasosnoopy3, vasosnoopy4],
+  },
+
+  {
+    id: 36,
+    keywords: "taza regalo oso",
+    name: "Vaso Starbucks oso con jockey rosa",
+    price: "$15.000",
+    tag: "Nuevo",
+    description: "Vaso osito de vidrio con jockey rosa, nuevo. Incluye su bombilla rosada con frutilla. Ideal para regalo o para tu colección.",
+    categoryId: 4,
+    subcategoryId: 401,
+    images: [vasorosaportada, vasorosa1, vasorosa2, vasorosa3],
+  },
+
  //OTROS
 
   {
@@ -395,15 +428,6 @@ export const products = [
     images: [afeitadoraportada, afeitadora1, afeitadora2, afeitadora3],
   },
 
-  //       {
-  //   id: 21,
-  //   name: "Botella de Agua con pajita 750ML, color negro mate",
-  //   price: "$8.500",
-  //   description: "Botella de agua 750ml con pajita para tomar, diseño color negro mate con dorado",
-  //   categoryId: 3,
-  //   subcategoryId: 103,
-  //   images: [botellaportada, botella1, botella2, botella3, botella4],
-  // },
 
             {
     id: 23,

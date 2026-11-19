@@ -1,43 +1,30 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
-import { useSearch } from '../../context/SearchContext';
 import './styles.css';
 
-const CategorySection = ({ category, products }) => {
-  const { searchQuery } = useSearch();
-  
-  // Filtrar productos por categoría
-  let categoryProducts = products.filter(p => p.categoryId === category.id);
-  
-  // Si hay una búsqueda activa, filtrar también por el término de búsqueda
-  if (searchQuery.trim()) {
-    const query = searchQuery.toLowerCase().trim();
-    categoryProducts = categoryProducts.filter(product => {
-      return product.name?.toLowerCase().includes(query);
-    });
-  }
-
-  // No mostrar la sección si no hay productos después del filtro
-  if (categoryProducts.length === 0) {
-    return null;
-  }
+const CategorySection = ({ id, title, subtitle, products, moreLink, eager = 0 }) => {
+  if (!products.length) return null;
 
   return (
-    <div className="page-container">
-      {/* <LeftSidebar /> */}
-      
-      <main className="main-content">
-        <section className="category-section">
-          <h2>{category.name}</h2>
-          <div className="products-grid">
-            {categoryProducts.map(product => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </section>
-      </main>
-      
-    </div>
+    <section className="section" id={id}>
+      <div className="section-head">
+        <div>
+          <h2>{title}</h2>
+          {subtitle && <p>{subtitle}</p>}
+        </div>
+        {moreLink && (
+          <Link to={moreLink} className="section-more">
+            Ver todo ›
+          </Link>
+        )}
+      </div>
+      <div className="products-grid">
+        {products.map((product, i) => (
+          <ProductCard key={product.id} product={product} eager={i < eager} />
+        ))}
+      </div>
+    </section>
   );
 };
 

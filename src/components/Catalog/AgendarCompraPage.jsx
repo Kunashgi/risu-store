@@ -52,7 +52,7 @@ const AgendarCompra = () => {
             <div className="delivery-option paid">
               <h3>📦 Envío a domicilio por Blue Express</h3>
               <div className="blue-express-container">
-                <p>Desde $2.900 (según producto). Demora aprox. 48 h desde el despacho.</p>
+                <p>$2.900. Demora aprox. 48 h desde el despacho.</p>
                 <div className="blue-express-logo-wrapper">
                   <img
                     src={blueExpressLogo}

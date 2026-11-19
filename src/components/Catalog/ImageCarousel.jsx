@@ -1,81 +1,54 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './ImageCarousel.css';
 
-const ImageCarousel = ({ images, productId }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const navigate = useNavigate();
+// Carrusel deslizable con el dedo (scroll-snap). En escritorio muestra flechas al pasar el mouse.
+const ImageCarousel = ({ images, productId, alt, eager = false }) => {
+  const trackRef = useRef(null);
+  const [index, setIndex] = useState(0);
 
-  const navigateToDetail = () => {
-    navigate(`/product/${productId}`, {
-      state: { 
-        images,
-        initialIndex: currentIndex 
-      }
-    });
+  const onScroll = () => {
+    const el = trackRef.current;
+    if (!el) return;
+    const i = Math.round(el.scrollLeft / el.clientWidth);
+    if (i !== index) setIndex(i);
   };
 
-  const navigateImages = (direction) => {
-    setCurrentIndex(prev => {
-      if (direction === 'prev') {
-        return prev === 0 ? images.length - 1 : prev - 1;
-      }
-      return prev === images.length - 1 ? 0 : prev + 1;
-    });
+  const goTo = (i, e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const el = trackRef.current;
+    const next = (i + images.length) % images.length;
+    el.scrollTo({ left: next * el.clientWidth, behavior: 'smooth' });
   };
 
   return (
-    <div className="carousel-container">
-      <div 
-        className="carousel-image-container"
-        onClick={navigateToDetail}
-      >
-        <img 
-          src={images[currentIndex]} 
-          alt={`Vista del producto ${currentIndex + 1}`}
-          className="carousel-image"
-          loading="lazy"
-        />
-        
-        {images.length > 1 && (
-          <>
-            <button 
-              className="carousel-button prev"
-              onClick={(e) => {
-                e.stopPropagation();
-                navigateImages('prev');
-              }}
-              aria-label="Imagen anterior"
-            >
-              &lt;
-            </button>
-            <button 
-              className="carousel-button next"
-              onClick={(e) => {
-                e.stopPropagation();
-                navigateImages('next');
-              }}
-              aria-label="Siguiente imagen"
-            >
-              &gt;
-            </button>
-            
-            <div className="carousel-dots">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  className={`dot ${index === currentIndex ? 'active' : ''}`}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setCurrentIndex(index);
-                  }}
-                  aria-label={`Ir a imagen ${index + 1}`}
-                />
-              ))}
-            </div>
-          </>
-        )}
+    <div className="carousel">
+      <div className="carousel-track" ref={trackRef} onScroll={onScroll}>
+        {images.map((src, i) => (
+          <Link to={`/product/${productId}`} className="carousel-slide" key={i} tabIndex={i === 0 ? 0 : -1}>
+            <img
+              src={src}
+              alt={`${alt} - foto ${i + 1}`}
+              loading={eager && i === 0 ? 'eager' : 'lazy'}
+              decoding="async"
+              draggable="false"
+            />
+          </Link>
+        ))}
       </div>
+
+      {images.length > 1 && (
+        <>
+          <button className="carousel-arrow prev" onClick={(e) => goTo(index - 1, e)} aria-label="Foto anterior">‹</button>
+          <button className="carousel-arrow next" onClick={(e) => goTo(index + 1, e)} aria-label="Foto siguiente">›</button>
+          <div className="carousel-dots" aria-hidden="true">
+            {images.map((_, i) => (
+              <span key={i} className={i === index ? 'active' : ''} />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };

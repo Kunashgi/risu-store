@@ -1,0 +1,225 @@
+{
+  "carpetaFotos": "../imgenes-alter-facebook",
+  "maxFotosPorPublicacion": 5,
+  "tandas": {
+    "mañana": {
+      "horario": "11:00–13:00",
+      "productos": ["pelota-mikasa-v200w", "cargador-xiaomi-120w", "vaso-starbucks-oso-verde", "tiras-nasales", "kit-teclado-mouse-bt"]
+    },
+    "noche": {
+      "horario": "20:00–22:00",
+      "productos": ["pelota-mikasa-vnl", "cargador-xiaomi-67w", "vaso-starbucks-oso-rosa", "vaso-starbucks-snoopy", "mouse-inalambrico"]
+    }
+  },
+  "pieDescripcion": [
+    "🚇 Entrega GRATIS en Metro Lo Blanco",
+    "🏠 Retiro GRATIS en San Bernardo",
+    "📦 Envío a domicilio $2.900",
+    "💳 Transferencia o efectivo"
+  ],
+  "productos": [
+    {
+      "id": "cargador-xiaomi-120w",
+      "nombre": "Cargador Xiaomi 120W ORIGINAL",
+      "carpeta": "cargador-xiaomi-120w",
+      "tier": "A",
+      "precioBase": 16000,
+      "variacionesPrecio": [16000, 15999, 15990, 16002],
+      "titulos": [
+        "Cargador Xiaomi 120W ORIGINAL HyperCharge ⚡ Nuevo en caja",
+        "Cargador ORIGINAL Xiaomi 120W carga súper rápida + cable tipo C",
+        "⚡ Xiaomi HyperCharge 120W ORIGINAL nuevo sellado"
+      ],
+      "descripciones": [
+        "Cargador Xiaomi HyperCharge 120W ORIGINAL, nuevo en su caja ⚡\nIncluye cargador + cable USB a tipo C.\nCarga súper rápida para tu Xiaomi / Redmi / Poco.",
+        "⚡ Cargador ORIGINAL Xiaomi 120W, nuevo y en caja.\nTrae el cabezal y su cable tipo C original. Ideal si se te echó a perder el tuyo o quieres uno de repuesto."
+      ],
+      "grupos": ["tecnologia", "santiago", "san-bernardo"],
+      "noPortada": ["cargador-xiaomi-120w-08.jpg"]
+    },
+    {
+      "id": "cargador-xiaomi-67w",
+      "nombre": "Cargador Xiaomi 67W ORIGINAL",
+      "carpeta": "cargador-xiaomi-67w",
+      "tier": "A",
+      "precioBase": 14000,
+      "variacionesPrecio": [14000, 13999, 13990, 14002],
+      "titulos": [
+        "Cargador Xiaomi 67W ORIGINAL HyperCharge ⚡ Nuevo en caja",
+        "Cargador ORIGINAL Xiaomi 67W carga rápida + cable tipo C",
+        "⚡ Xiaomi HyperCharge Combo 67W ORIGINAL nuevo"
+      ],
+      "descripciones": [
+        "Cargador Xiaomi HyperCharge 67W ORIGINAL, nuevo en su caja ⚡\nIncluye cargador + cable USB a tipo C.\nCarga rápida para Xiaomi / Redmi / Poco.",
+        "⚡ Cargador ORIGINAL Xiaomi 67W (HyperCharge Combo), nuevo.\nViene con su cable tipo C original. Carga tu celu en minutos."
+      ],
+      "grupos": ["tecnologia", "santiago", "san-bernardo"],
+      "noPortada": ["cargador-xiaomi-67w-12.jpg"]
+    },
+    {
+      "id": "tiras-nasales",
+      "nombre": "Tiras nasales magnéticas",
+      "carpeta": "tiras-nasales",
+      "tier": "A",
+      "precioBase": 8500,
+      "variacionesPrecio": [8500, 8499, 8490, 8502],
+      "titulos": [
+        "Tiras nasales magnéticas anti ronquidos 😴 Nuevas",
+        "Dilatador nasal magnético para dormir mejor 👃 Nuevo",
+        "Kit tiras nasales magnéticas + bandas de distintos tamaños"
+      ],
+      "descripciones": [
+        "Tiras nasales magnéticas anti ronquidos, nuevas en caja 😴\nAyudan a abrir la nariz y respirar mejor al dormir o hacer deporte.\nIncluye bandas de distintos tamaños y 30 parches magnéticos.",
+        "👃 Dilatador nasal magnético: respira mejor y ronca menos.\nNuevo, en su caja. Trae bandas en varios tamaños + 30 parches.\nSirve para dormir y para entrenar."
+      ],
+      "grupos": ["santiago", "san-bernardo"]
+    },
+    {
+      "id": "pelota-mikasa-v200w",
+      "nombre": "Pelota vóley Mikasa V200W ORIGINAL",
+      "carpeta": "pelota-mikasa-v200w",
+      "tier": "A",
+      "precioBase": 40000,
+      "variacionesPrecio": [40000, 39990, 39999, 40002],
+      "titulos": [
+        "Pelota vóley Mikasa V200W ORIGINAL 🏐 Nueva",
+        "Balón voleibol Mikasa V200W ORIGINAL oficial FIVB 🏐",
+        "🏐 Mikasa V200W ORIGINAL nueva - pelota de vóley"
+      ],
+      "descripciones": [
+        "Pelota de vóley Mikasa V200W ORIGINAL, nueva 🏐\nModelo oficial FIVB, el mismo de competencia.\nExcelente toque y agarre.",
+        "🏐 Balón Mikasa V200W ORIGINAL (National Competition Model), nuevo.\nIdeal para entrenar o jugar en serio. Se entrega nueva y sellada."
+      ],
+      "grupos": ["voley", "santiago", "san-bernardo"],
+      "noPortada": ["pelota-mikasa-v200w-01.jpg", "pelota-mikasa-v200w-02.jpg","pelota-mikasa-v200w-09.jpg", "pelota-mikasa-v200w-17.jpg", "pelota-mikasa-v200w-18.jpg"]
+    },
+    {
+      "id": "pelota-mikasa-vnl",
+      "nombre": "Pelota vóley Mikasa V200W edición VNL",
+      "carpeta": "pelota-mikasa-vnl",
+      "tier": "A",
+      "precioBase": 30000,
+      "variacionesPrecio": [30000, 29990, 29999, 30002],
+      "titulos": [
+        "Pelota vóley Mikasa V200W edición VNL 🏐 Nueva",
+        "Balón voleibol Mikasa V200W-VNL Volleyball Nations League 🏐",
+        "🏐 Mikasa V200W VNL nueva - pelota de vóley"
+      ],
+      "descripciones": [
+        "Pelota de vóley Mikasa V200W edición VNL (Volleyball Nations League), nueva 🏐\nBuen toque y agarre, ideal para entrenar y jugar.",
+        "🏐 Balón Mikasa V200W-VNL nuevo, diseño de la Volleyball Nations League.\nPerfecto para entrenamientos, talleres o pichangas de vóley."
+      ],
+      "grupos": ["voley", "santiago", "san-bernardo"],
+      "noPortada": ["pelota-mikasa-vnl-07.jpg", "pelota-mikasa-vnl-08.jpg", "pelota-mikasa-vnl-09.jpg"]
+    },
+    {
+      "id": "vaso-starbucks-oso-verde",
+      "nombre": "Vaso Starbucks oso gorro verde",
+      "carpeta": "vaso-starbucks-oso-verde",
+      "tier": "A",
+      "precioBase": 15000,
+      "variacionesPrecio": [15000, 14999, 14990, 15002],
+      "titulos": [
+        "Vaso Starbucks ORIGINAL oso gorro verde 🐻💚 Nuevo",
+        "Vaso oso Starbucks ORIGINAL con gorrito verde + bombilla ☕",
+        "🐻 Vaso Starbucks ORIGINAL osito gorro verde 591 ml nuevo"
+      ],
+      "descripciones": [
+        "Vaso Starbucks ORIGINAL osito con gorro verde, nuevo 🐻💚\n591 ml (20 oz), incluye su bombilla.\nIdeal para regalo o para tu colección.",
+        "💚 Vaso oso Starbucks ORIGINAL con gorrito verde, nuevo.\nCapacidad 591 ml, con bombilla a juego. ¡Precioso para regalar!"
+      ],
+      "grupos": ["starbucks", "santiago", "san-bernardo"],
+      "noPortada": ["vaso-starbucks-oso-verde-04.jpg", "vaso-starbucks-oso-verde-05.jpg", "vaso-starbucks-oso-verde-09.jpg", "vaso-starbucks-oso-verde-10.jpg", "vaso-starbucks-oso-verde-11.jpg"]
+    },
+    {
+      "id": "vaso-starbucks-oso-rosa",
+      "nombre": "Vaso Starbucks oso jockey rosa",
+      "carpeta": "vaso-starbucks-oso-rosa",
+      "tier": "A",
+      "precioBase": 15000,
+      "variacionesPrecio": [15000, 14999, 14990, 15002],
+      "titulos": [
+        "Vaso Starbucks oso con jockey rosa 🐻🩷 Nuevo",
+        "Vaso oso Starbucks jockey rosa + bombilla con frutilla 🍓",
+        "🐻 Vaso osito Starbucks de vidrio con jockey rosado nuevo"
+      ],
+      "descripciones": [
+        "Vaso Starbucks osito de vidrio con jockey rosa, nuevo 🐻🩷\nIncluye su bombilla rosada con frutilla 🍓\nIdeal para regalo o para tu colección.",
+        "🩷 Vaso oso Starbucks con jockey rosado, nuevo.\nDe vidrio, con bombilla rosada y frutilla a juego. ¡Precioso para regalar!"
+      ],
+      "grupos": ["starbucks", "santiago", "san-bernardo"],
+      "noPortada": ["vaso-starbucks-oso-rosa-05.jpg"]
+    },
+    {
+      "id": "vaso-starbucks-snoopy",
+      "nombre": "Vaso Starbucks Snoopy",
+      "carpeta": "vaso-starbucks-snoopy",
+      "tier": "A",
+      "precioBase": 20000,
+      "variacionesPrecio": [20000, 19990, 19999, 20002],
+      "titulos": [
+        "Vaso Starbucks Snoopy ORIGINAL 🐶🧡 Nuevo",
+        "Vaso Snoopy Starbucks ORIGINAL con gorro, bufanda y Woodstock ☕",
+        "🐶 Vaso Starbucks Snoopy ORIGINAL edición invierno nuevo"
+      ],
+      "descripciones": [
+        "Vaso Starbucks Snoopy ORIGINAL, nuevo 🐶🧡\nCon gorrito naranjo, bufanda tejida verde y bombilla con Woodstock.\nUn regalo perfecto para fans de Snoopy.",
+        "🧡 Vaso Snoopy de Starbucks ORIGINAL, nuevo.\nTrae su bufanda verde, gorro naranjo y bombilla con Woodstock 🐤\nIdeal para colección o regalo."
+      ],
+      "grupos": ["starbucks", "santiago", "san-bernardo"],
+      "noPortada": ["vaso-starbucks-snoopy-04.jpg", "vaso-starbucks-snoopy-05.jpg"]
+    },
+    {
+      "id": "kit-teclado-mouse-bt",
+      "nombre": "Kit teclado + mouse Bluetooth retroiluminado",
+      "carpeta": "kit-teclado-mouse-bt",
+      "tier": "A",
+      "precioBase": 18000,
+      "variacionesPrecio": [18000, 17990, 17999, 18002],
+      "titulos": [
+        "Kit teclado + mouse Bluetooth retroiluminado ⌨️🖱️ Nuevo",
+        "Teclado y mouse inalámbrico Bluetooth con luz RGB ✨",
+        "⌨️ Kit teclado + mouse Bluetooth para iPad, celular y PC"
+      ],
+      "descripciones": [
+        "Kit teclado + mouse inalámbrico Bluetooth, nuevo ⌨️🖱️\nCon luz retroiluminada de varios colores ✨\nCompatible con iPad, iPhone, Android, Windows y PC.",
+        "✨ Teclado + mouse Bluetooth retroiluminados, nuevos.\nLivianos y delgados, perfectos para tablet, notebook o PC.\nFuncionan con iOS, Android y Windows."
+      ],
+      "grupos": ["tecnologia", "santiago", "san-bernardo"]
+    },
+    {
+      "id": "mouse-inalambrico",
+      "nombre": "Mouse inalámbrico gamer",
+      "carpeta": "mouse-inalambrico",
+      "tier": "A",
+      "precioBase": 6500,
+      "variacionesPrecio": [6500, 6490, 6499, 6502],
+      "titulos": [
+        "Mouse inalámbrico gamer ergonómico 🖱️ Nuevo",
+        "Mouse inalámbrico USB 1600 DPI silencioso 🖱️",
+        "🖱️ Mouse gamer inalámbrico 6 botones - nuevo en caja"
+      ],
+      "descripciones": [
+        "Mouse inalámbrico gamer, nuevo en caja 🖱️\nFunciona con receptor USB, DPI ajustable hasta 1600, 6 botones y clic silencioso.",
+        "🖱️ Mouse inalámbrico ergonómico, nuevo.\nReceptor USB, control de DPI (hasta 1600), 6 botones. Ideal para PC o notebook."
+      ],
+      "grupos": ["tecnologia", "santiago", "san-bernardo"],
+      "noPortada": ["mouse-inalambrico-02.jpg", "mouse-inalambrico-04.jpg"]
+    },
+    {
+      "id": "cargador-samsung-45w",
+      "nombre": "Cargador para Samsung 45W",
+      "carpeta": "cargador-samsung-45w",
+      "tier": "B",
+      "precioBase": 8500,
+      "grupos": ["tecnologia", "santiago", "san-bernardo"]
+    },
+    {
+      "id": "skate",
+      "nombre": "Skate (liquidación)",
+      "carpeta": "skate",
+      "tier": "B",
+      "grupos": ["santiago", "san-bernardo"]
+    }
+  ]
+}

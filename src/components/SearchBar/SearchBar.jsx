@@ -3,44 +3,33 @@ import { useSearch } from '../../context/SearchContext';
 import { FaSearch } from 'react-icons/fa';
 import './SearchBar.css';
 
-const SearchBar = ({ variant = 'default' }) => {
+const SearchBar = () => {
   const { searchQuery, updateSearchQuery } = useSearch();
 
-  const handleChange = (e) => {
-    updateSearchQuery(e.target.value);
-  };
-
-  const handleClear = () => {
-    updateSearchQuery('');
-  };
-
-  const variantClass = variant === 'navbar' ? 'navbar' : variant;
-  
   return (
-    <div className={`search-bar search-bar-${variantClass}`}>
-      <div className="search-input-container">
-        <FaSearch className="search-icon" />
-        <input
-          type="text"
-          placeholder="Buscar productos..."
-          value={searchQuery}
-          onChange={handleChange}
-          className="search-input"
-        />
-        {searchQuery && (
-          <button
-            type="button"
-            onClick={handleClear}
-            className="search-clear-button"
-            aria-label="Limpiar búsqueda"
-          >
-            ✕
-          </button>
-        )}
-      </div>
+    <div className="search-bar">
+      <FaSearch className="search-icon" />
+      <input
+        type="search"
+        placeholder="Buscar: vaso, cargador, pelota..."
+        value={searchQuery}
+        onChange={(e) => updateSearchQuery(e.target.value)}
+        className="search-input"
+        aria-label="Buscar productos"
+        enterKeyHint="search"
+      />
+      {searchQuery && (
+        <button
+          type="button"
+          onClick={() => updateSearchQuery('')}
+          className="search-clear"
+          aria-label="Limpiar búsqueda"
+        >
+          ✕
+        </button>
+      )}
     </div>
   );
 };
 
 export default SearchBar;
-

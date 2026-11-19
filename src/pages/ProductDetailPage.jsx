@@ -1,93 +1,120 @@
-import React, { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { useParams, useNavigate, Navigate } from 'react-router-dom';
+import { FaWhatsapp, FaArrowLeft } from 'react-icons/fa';
 import { products } from '../data/products';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { whatsappLink, DELIVERY_OPTIONS } from '../config';
+import CategorySection from '../components/Catalog/CategorySection';
+import { Footer, Reviews, RatingBadge } from '../components/Catalog/Extras';
 import styles from './ProductDetailPage.module.css';
 
 const ProductDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const productId = Number(id);
-  
-  // Verificación más robusta del ID
-  const isValidId = !isNaN(productId) && productId > 0;
-  
-  // Redirección inmediata si el ID no es válido
-  useEffect(() => {
-    if (!isValidId) {
-      navigate('/', { replace: true });
-      return;
-    }
-    
-    const productExists = products.some(p => p.id === productId);
-    if (!productExists) {
-      navigate('/', { replace: true });
-    }
-  }, [isValidId, productId, navigate]);
+  const product = products.find((p) => p.id === Number(id));
+  const trackRef = useRef(null);
+  const [index, setIndex] = useState(0);
 
-  const product = products.find(p => p.id === productId);
-  
-  // Configuración del carrusel
-  const sliderSettings = {
-    dots: true,
-    arrows: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    draggable: true,
-    swipe: true,
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setIndex(0);
+    if (trackRef.current) trackRef.current.scrollLeft = 0;
+  }, [id]);
+
+  if (!product) return <Navigate to="/" replace />;
+
+  const images = product.images || [product.image];
+  const related = products
+    .filter((p) => p.categoryId === product.categoryId && p.id !== product.id)
+    .slice(0, 4);
+
+  const goTo = (i) => {
+    const el = trackRef.current;
+    el.scrollTo({ left: i * el.clientWidth, behavior: 'smooth' });
   };
 
-  // Si no hay producto válido, no renderices nada (ya se redirigió)
-  if (!product || !isValidId) {
-    return null;
-  }
+  const onScroll = () => {
+    const el = trackRef.current;
+    setIndex(Math.round(el.scrollLeft / el.clientWidth));
+  };
+
+  const goBack = () => (window.history.length > 1 ? navigate(-1) : navigate('/'));
 
   return (
-    <div className={styles.container}>
-      <button 
-        onClick={() => navigate(-1)} 
-        className={styles.backButton}
-      >
-        &larr; Volver
+    <div className={styles.page}>
+      <button onClick={goBack} className={styles.back}>
+        <FaArrowLeft /> Volver
       </button>
-      
-      <div className={styles.productHeader}>
-        <h1 className={styles.productTitle}>{product.name}</h1>
-      </div>
-      
-      <div className={styles.productContent}>
-        <div className={styles.imageGallery}>
-          <Slider {...sliderSettings}>
-            {product.images.map((image, index) => (
-              <div key={index} className={styles.slide}>
-                <img 
-                  src={image} 
-                  alt={`${product.name} - Imagen ${index + 1}`} 
-                  onError={(e) => {
-                    e.target.onerror = null; 
-                    e.target.src = 'ruta-a-imagen-por-defecto.jpg';
-                  }}
-                />
+
+      <div className={styles.layout}>
+        <div className={styles.gallery}>
+          <div className={styles.track} ref={trackRef} onScroll={onScroll}>
+            {images.map((src, i) => (
+              <div className={styles.slide} key={i}>
+                <img src={src} alt={`${product.name} - foto ${i + 1}`} loading={i === 0 ? 'eager' : 'lazy'} />
               </div>
             ))}
-          </Slider>
+          </div>
+          {images.length > 1 && (
+            <span className={styles.counter}>{index + 1} / {images.length}</span>
+          )}
+          {images.length > 1 && (
+            <div className={styles.thumbs}>
+              {images.map((src, i) => (
+                <button
+                  key={i}
+                  className={`${styles.thumb} ${i === index ? styles.thumbActive : ''}`}
+                  onClick={() => goTo(i)}
+                  aria-label={`Ver foto ${i + 1}`}
+                >
+                  <img src={src} alt="" />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
-        
-        <div className={styles.productInfo}>
-          <p className={styles.price}>{product.price} CLP</p>
+
+        <div className={styles.info}>
+          {product.tag && (
+            <span className={product.tag === 'ORIGINAL' ? styles.tagOriginal : styles.tagNew}>
+              {product.tag === 'ORIGINAL' ? '✔ ORIGINAL' : product.tag}
+            </span>
+          )}
+          <h1 className={styles.title}>{product.name}</h1>
+          <RatingBadge />
+          <p className={styles.price}>{product.price} <small>CLP</small></p>
           <p className={styles.description}>{product.description}</p>
-          
-          <button 
-            className={styles.addToCartButton}
-            onClick={() => navigate('/agendar-compra')}
-          >
-            Realizar Pedido
-          </button>
+
+          <a className={styles.waButton} href={whatsappLink(product)} target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp /> Pedir por WhatsApp
+          </a>
+
+          <ul className={styles.delivery}>
+            {DELIVERY_OPTIONS.map((o) => (
+              <li key={o.title}>
+                <span>{o.icon}</span>
+                <div>
+                  <strong>{o.title} · {o.text}</strong>
+                  <small>{o.detail}</small>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
+      </div>
+
+      <Reviews />
+      {related.length > 0 && <CategorySection title="También te puede gustar" products={related} />}
+      <Footer />
+
+      {/* Barra fija inferior en el celular */}
+      <div className={styles.stickyBar}>
+        <div>
+          <small>Precio</small>
+          <strong>{product.price}</strong>
+        </div>
+        <a href={whatsappLink(product)} target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp /> Pedir
+        </a>
       </div>
     </div>
   );

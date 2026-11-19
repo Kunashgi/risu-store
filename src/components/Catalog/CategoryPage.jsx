@@ -1,90 +1,56 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { products } from '../../data/products';
+import React, { useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { products, featuredIds } from '../../data/products';
 import { categories } from '../../data/categories';
+import { useSearch } from '../../context/SearchContext';
 import CategorySection from './CategorySection';
-import { useNavigate } from 'react-router-dom';
-import blueExpressLogo from '../../assets/images/page/blue-express-logo.png';
-import { FaWhatsapp } from 'react-icons/fa';
+import { DeliveryStrip, HowToBuy, FloatingWhatsApp, Footer, Reviews } from './Extras';
+import { searchProducts } from './search';
 import './styles.css';
 
 const CategoryPage = () => {
   const { categoryId } = useParams();
-    const navigate = useNavigate();
+  const { searchQuery } = useSearch();
+  const category = categories.find((c) => c.id === Number(categoryId));
 
-  // Encontrar la categoría específica
-  const currentCategory = categories.find(
-    category => category.id === parseInt(categoryId)
-  );
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [categoryId]);
 
-  // Si no existe la categoría, mostrar mensaje
-  if (!currentCategory) {
-    return <div className="catalog-page">Categoría no encontrada</div>;
+  if (!category) {
+    return (
+      <div className="page empty">
+        <p>Categoría no encontrada</p>
+        <Link to="/" className="btn-primary">Volver al inicio</Link>
+      </div>
+    );
   }
 
-  const handleButtonClick = () => {
-    navigate('/agendar-compra');
-  };
-
+  // Destacados primero dentro de la categoría
+  let list = products
+    .filter((p) => p.categoryId === category.id)
+    .sort((a, b) => {
+      const ia = featuredIds.indexOf(a.id);
+      const ib = featuredIds.indexOf(b.id);
+      return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+    });
+  if (searchQuery.trim()) list = searchProducts(list, searchQuery.trim());
 
   return (
-    <div className="catalog-container">
-      <div className="catalog-page">
-        {/* Mostrar solo la sección de la categoría actual */}
-        <CategorySection
-          key={currentCategory.id}
-          category={currentCategory}
-          products={products}
-          showTitle={true} // Opcional: para asegurar que el título se muestre
-        />
-      </div>
-
-      <div className="mobile-panel" onClick={handleButtonClick}>
-        <span className="mobile-delivery-text-simple">
-          Retiro y Metro Lo Blanco GRATIS · Envío Blue Express desde $2.900
-        </span>
-        <div className="mobile-whatsapp-icon-simple">
-          <FaWhatsapp />
-        </div>
-      </div>
-
-      <div className="left-panel">
-        <div className="delivery-info-card">
-          <div className="delivery-info-content">
-            <div className="delivery-info-text">
-              <p className="delivery-main-text">
-                Retiro GRATIS en San Bernardo y entrega GRATIS en Metro Lo Blanco. Envío a domicilio por Blue Express desde $2.900.
-              </p>
-              <p className="delivery-sub-text">
-                Coordinar por WhatsApp
-              </p>
-            </div>
-            <div className="delivery-logos">
-              <div className="delivery-logo-item">
-                <img 
-                  src={blueExpressLogo} 
-                  alt="Logo Blue Express" 
-                  className="blue-express-logo-small"
-                />
-              </div>
-              <div className="delivery-logo-item whatsapp-logo">
-                <FaWhatsapp className="whatsapp-icon-logo" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          className="panel-button"
-          onClick={handleButtonClick}
-        >
-          Agendar Compra <FaWhatsapp style={{ marginLeft: '8px' }} />
-        </button>
-      </div>
+    <div className="page">
+      <DeliveryStrip />
+      <CategorySection
+        title={`${category.icon} ${category.name}`}
+        subtitle={`${list.length} producto${list.length === 1 ? '' : 's'}`}
+        products={list}
+        eager={4}
+      />
+      {!list.length && <div className="empty"><p>No hay productos que coincidan 😕</p></div>}
+      <Reviews />
+      <HowToBuy />
+      <Footer />
+      <FloatingWhatsApp />
     </div>
-
-
-
   );
 };
 
